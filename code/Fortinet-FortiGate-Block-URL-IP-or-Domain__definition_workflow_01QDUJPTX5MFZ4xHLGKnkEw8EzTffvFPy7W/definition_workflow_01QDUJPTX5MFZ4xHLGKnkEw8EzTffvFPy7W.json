@@ -11,27 +11,13 @@
         "properties": {
           "value": "",
           "scope": "local",
-          "name": "Policy Name",
+          "name": "Address Name",
           "type": "datatype.string",
-          "description": "Name of the Firewall Policy. Leave this value empty if you want to create a new Firewall Policy.",
+          "description": "The name of the Address. This will be populated automatically.",
           "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01QXHR8UGUKKV3PzLWDz5cd9wfGxZ0M0WBc",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "local",
-          "name": "Web Filter Name",
-          "type": "datatype.string",
-          "description": "The Name of the Web Filter. Leave this value empty if you want to create a new Web Filter.",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01QENLZHPIVVI28kd2INwi2zuZncQeryxQr",
+        "unique_name": "variable_workflow_01QXEW7YBXKOA67nOxzUyeafXXO7sWUTTyr",
         "object_type": "variable_workflow"
       },
       {
@@ -46,34 +32,6 @@
           "is_invisible": false
         },
         "unique_name": "variable_workflow_01QDUWPO1WE3738QmwiLwBJbXce3agNJ7Kk",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.boolean",
-        "properties": {
-          "value": false,
-          "scope": "local",
-          "name": "Web Filter Exists",
-          "type": "datatype.boolean",
-          "description": "Boolean variable which indicates if a given Web Filter already exists. This will be populated automatically.",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01QXHDTN38KYA2fVPGaarP7pEMBlwNgVqpK",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.secure_string",
-        "properties": {
-          "value": "",
-          "scope": "local",
-          "name": "Access Token",
-          "type": "datatype.secure_string",
-          "description": "Access Token for FortiGate API.",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01QVNBNH9JTYK3NfHWwhAzXMl4rzC8QLGvm",
         "object_type": "variable_workflow"
       },
       {
@@ -94,6 +52,62 @@
         "schema_id": "datatype.string",
         "properties": {
           "value": "",
+          "scope": "local",
+          "name": "Web Filter Name",
+          "type": "datatype.string",
+          "description": "The Name of the Web Filter. Leave this value empty if you want to create a new Web Filter.",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01QENLZHPIVVI28kd2INwi2zuZncQeryxQr",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Policy Name",
+          "type": "datatype.string",
+          "description": "Name of the Firewall Policy. Leave this value empty if you want to create a new Firewall Policy.",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01QXHR8UGUKKV3PzLWDz5cd9wfGxZ0M0WBc",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Address Group Name",
+          "type": "datatype.string",
+          "description": "The Name of the Address Group to be updated with the provided observable value. Leave this value empty if you want to create a new Address Group.",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01QENMB1Z1RQH358zoMEikzjGBvYRvrdvlA",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.secure_string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Access Token",
+          "type": "datatype.secure_string",
+          "description": "Access Token for FortiGate API.",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01QVNBNH9JTYK3NfHWwhAzXMl4rzC8QLGvm",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
           "scope": "input",
           "name": "observable_value",
           "type": "datatype.string",
@@ -105,17 +119,17 @@
         "object_type": "variable_workflow"
       },
       {
-        "schema_id": "datatype.string",
+        "schema_id": "datatype.boolean",
         "properties": {
-          "value": "",
+          "value": false,
           "scope": "local",
-          "name": "Address Name",
-          "type": "datatype.string",
-          "description": "The name of the Address. This will be populated automatically.",
+          "name": "Web Filter Exists",
+          "type": "datatype.boolean",
+          "description": "Boolean variable which indicates if a given Web Filter already exists. This will be populated automatically.",
           "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01QXEW7YBXKOA67nOxzUyeafXXO7sWUTTyr",
+        "unique_name": "variable_workflow_01QXHDTN38KYA2fVPGaarP7pEMBlwNgVqpK",
         "object_type": "variable_workflow"
       },
       {
@@ -144,20 +158,6 @@
           "is_invisible": false
         },
         "unique_name": "variable_workflow_01QZNHEJDR7FC4pDu5xtcEhXqjDYuHgYhUt",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "local",
-          "name": "Address Group Name",
-          "type": "datatype.string",
-          "description": "The Name of the Address Group to be updated with the provided observable value. Leave this value empty if you want to create a new Address Group.",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01QENMB1Z1RQH358zoMEikzjGBvYRvrdvlA",
         "object_type": "variable_workflow"
       }
     ],
@@ -632,7 +632,7 @@
                 "type": "logic.if_else",
                 "base_type": "activity",
                 "properties": {
-                  "continue_on_failure": true,
+                  "continue_on_failure": false,
                   "display_name": "Address Group Name provided?",
                   "skip_execution": false
                 },
@@ -3773,19 +3773,19 @@
     }
   },
   "atomic_workflows": [
-    "definition_workflow_01Q2H2423CNMQ55zxmxIlndVdm1FyYI9WvB",
-    "definition_workflow_01QJMY7EFE9EB0dUuvozT00neDnloTNQN05",
+    "definition_workflow_01QTSQI5IY61E0eT05l4mbwyexR2rwtaSYl",
     "definition_workflow_01QDTLM4YSM301c4l0yOFGdfOheLwpbNvjT",
+    "definition_workflow_01Q2H2423CNMQ55zxmxIlndVdm1FyYI9WvB",
+    "definition_workflow_01MRIE3B3DNNQ3cdFSoyGkg1RnVsYA9VdZr",
+    "definition_workflow_01QPJN9P092ZK4B1nv7D0yaTHqYWenXdVIb",
+    "definition_workflow_01QJMY7EFE9EB0dUuvozT00neDnloTNQN05",
+    "definition_workflow_01QTTUMDSUU0L6hykgyzvov9DIbC8YZyISv",
+    "definition_workflow_01RL0ZYE7UHXO0nAMEa55KHOiiLLvVzSQwX",
+    "definition_workflow_01QKJSE0LURMP1XIO79isiyUAXKTDDZeCGV",
     "definition_workflow_01QDU1FYX531C0rakrXzq8h6BHdjcTDqqu6",
     "definition_workflow_01QIUK02LX1IV6JwzN4GYkZHhcTIw3RRTzf",
-    "definition_workflow_01QNX6UNITCLT5hFo0PqHo1Ajkua15WaSmO",
-    "definition_workflow_01MRIE3B3DNNQ3cdFSoyGkg1RnVsYA9VdZr",
-    "definition_workflow_01QTSQI5IY61E0eT05l4mbwyexR2rwtaSYl",
-    "definition_workflow_01QKJSE0LURMP1XIO79isiyUAXKTDDZeCGV",
-    "definition_workflow_01RL0ZYE7UHXO0nAMEa55KHOiiLLvVzSQwX",
-    "definition_workflow_01QTTUMDSUU0L6hykgyzvov9DIbC8YZyISv",
-    "definition_workflow_01QPJN9P092ZK4B1nv7D0yaTHqYWenXdVIb",
     "definition_workflow_01QEKYC6UW4XZ1w1cPVACPX85Vy4BJAAbq5",
+    "definition_workflow_01QNX6UNITCLT5hFo0PqHo1Ajkua15WaSmO",
     "definition_workflow_01QCYG8UTYAXE2w8zM3Mn9RTBQXaMPNNl6e"
   ]
 }
