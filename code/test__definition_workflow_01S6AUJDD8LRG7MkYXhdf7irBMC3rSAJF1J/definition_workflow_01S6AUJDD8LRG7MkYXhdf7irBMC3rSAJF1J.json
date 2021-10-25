@@ -7,118 +7,6 @@
     "base_type": "workflow",
     "variables": [
       {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "local",
-          "name": "Service Name",
-          "type": "datatype.string",
-          "description": "Name of the Service. This will be populated automatically.",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01SBAKR6SYUQ12lXhdq78P30h0yFJuIcDLC",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "local",
-          "name": "Source Address Name",
-          "type": "datatype.string",
-          "description": "Name of the object to handle destination address. This will be populated automatically.",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01SB9OQ9J4RMT3JaxuNkO5BbVQBcn1GOOC1",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "SXo",
-          "scope": "local",
-          "name": "Prefix",
-          "type": "datatype.string",
-          "description": "A prefix that will be added to the address objects created by this workflow.",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01SB9LG5ALPAB7SVBpxRQNCpK6FQSnPe9Kj",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "SXo-ServiceGroup-0b3787e6-7421-4547-be69-7e45b3f91381",
-          "scope": "local",
-          "name": "Service Group Name",
-          "type": "datatype.string",
-          "description": "The Name of the Service Group to be updated with the provided observable value. Leave this value empty if you want to create a new Service Group.",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01SBATZ1JBTRB4y0iIpXGZkYfJNPnktOXPO",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "local",
-          "name": "Destination Address Name",
-          "type": "datatype.string",
-          "description": "Name of the object to handle destination address. This will be populated automatically.",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01SB9PIPECCAL4L4Nb6HY857fnW7uLpEx71",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "local",
-          "name": "Policy Name",
-          "type": "datatype.string",
-          "description": "Name of the Firewall Policy. This will be populated automatically.",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01SBD5N18ZK7Z5l1EvvX4lRhjBDNkLL1VMI",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "SXo-AddressGroup-499bbb54-7e6f-467b-99db-3f18029cef4",
-          "scope": "local",
-          "name": "Destination Address Group Name",
-          "type": "datatype.string",
-          "description": "Name of the group to contain destination address objects. Leave this value empty if you want to create a new Destination Address Group.",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01SBBU6YZFLHU7ivu9e9Rki8KhZrxORq6sR",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "SXo-AddressGroup-199ab7e3-3fba-4ec5-a75d-b9a0307a58e",
-          "scope": "local",
-          "name": "Source Address Group Name",
-          "type": "datatype.string",
-          "description": "Name of the group to contain destination address objects. Leave this value empty if you want to create a new Source Address Group.",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01SBBTW2WA37M2fvFzuIJBMyCa7GRg7ldDO",
-        "object_type": "variable_workflow"
-      },
-      {
         "schema_id": "datatype.boolean",
         "properties": {
           "value": false,
@@ -147,6 +35,118 @@
         "object_type": "variable_workflow"
       },
       {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "SXo-AddressGroup-199ab7e3-3fba-4ec5-a75d-b9a0307a58e",
+          "scope": "local",
+          "name": "Source Address Group Name",
+          "type": "datatype.string",
+          "description": "Name of the group to contain destination address objects. Leave this value empty if you want to create a new Source Address Group.",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01SBBTW2WA37M2fvFzuIJBMyCa7GRg7ldDO",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Destination Address Name",
+          "type": "datatype.string",
+          "description": "Name of the object to handle destination address. This will be populated automatically.",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01SB9PIPECCAL4L4Nb6HY857fnW7uLpEx71",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "SXo-ServiceGroup-0b3787e6-7421-4547-be69-7e45b3f91381",
+          "scope": "local",
+          "name": "Service Group Name",
+          "type": "datatype.string",
+          "description": "The Name of the Service Group to be updated with the provided observable value. Leave this value empty if you want to create a new Service Group.",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01SBATZ1JBTRB4y0iIpXGZkYfJNPnktOXPO",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Policy Name",
+          "type": "datatype.string",
+          "description": "Name of the Firewall Policy. This will be populated automatically.",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01SBD5N18ZK7Z5l1EvvX4lRhjBDNkLL1VMI",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "SXo",
+          "scope": "local",
+          "name": "Prefix",
+          "type": "datatype.string",
+          "description": "A prefix that will be added to the address objects created by this workflow.",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01SB9LG5ALPAB7SVBpxRQNCpK6FQSnPe9Kj",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Source Address Name",
+          "type": "datatype.string",
+          "description": "Name of the object to handle destination address. This will be populated automatically.",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01SB9OQ9J4RMT3JaxuNkO5BbVQBcn1GOOC1",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "{\"Destination Host IP\":\"9.9.9.9\",\"Source Host IP\":\"6.6.6.6\",\"Access Action\":\"allow\",\"Access Policy Name\":\"SXo-Policy-b422eb33-7423-4dad-9e59\",\"Protocol\":\"TCP\",\"ServiceNow Task ID\":\"71be94e32f9330102d00d5ccf699b66e\",\"Destination Port\":\"80\"}",
+          "scope": "input",
+          "name": "observable_value",
+          "type": "datatype.string",
+          "description": "Variable to receive the data from the ServiceNow triggering request.",
+          "is_required": true,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01S6BKDUZAOOA57IxSfv5jb9bQXWEkREkVR",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Service Name",
+          "type": "datatype.string",
+          "description": "Name of the Service. This will be populated automatically.",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01SBAKR6SYUQ12lXhdq78P30h0yFJuIcDLC",
+        "object_type": "variable_workflow"
+      },
+      {
         "schema_id": "datatype.secure_string",
         "properties": {
           "value": "*****",
@@ -163,15 +163,15 @@
       {
         "schema_id": "datatype.string",
         "properties": {
-          "value": "{\"Destination Host IP\":\"9.9.9.9\",\"Source Host IP\":\"6.6.6.6\",\"Access Action\":\"allow\",\"Access Policy Name\":\"SXo-Policy-b422eb33-7423-4dad-9e59\",\"Protocol\":\"TCP\",\"ServiceNow Task ID\":\"71be94e32f9330102d00d5ccf699b66e\",\"Destination Port\":\"80\"}",
-          "scope": "input",
-          "name": "observable_value",
+          "value": "SXo-AddressGroup-499bbb54-7e6f-467b-99db-3f18029cef4",
+          "scope": "local",
+          "name": "Destination Address Group Name",
           "type": "datatype.string",
-          "description": "Variable to receive the data from the ServiceNow triggering request.",
-          "is_required": true,
+          "description": "Name of the group to contain destination address objects. Leave this value empty if you want to create a new Destination Address Group.",
+          "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01S6BKDUZAOOA57IxSfv5jb9bQXWEkREkVR",
+        "unique_name": "variable_workflow_01SBBU6YZFLHU7ivu9e9Rki8KhZrxORq6sR",
         "object_type": "variable_workflow"
       }
     ],
@@ -1336,12 +1336,12 @@
               {
                 "unique_name": "definition_activity_01S6EI6UL39RW0n6VOJFesQT1e8VCwrmqSz",
                 "name": "For Each",
-                "title": "For Each",
+                "title": "For Each Address",
                 "type": "logic.for_each",
                 "base_type": "activity",
                 "properties": {
                   "continue_on_failure": false,
-                  "display_name": "For Each",
+                  "display_name": "For Each Address",
                   "skip_execution": false,
                   "source_array": "$activity.definition_activity_01S6FJ9PJJN9O0yu9owsj3SiBggfR16VvPO.output.read_table_from_text$"
                 },
@@ -1534,12 +1534,12 @@
                                   {
                                     "unique_name": "definition_activity_01SB9XAPS589421friHEEjg5ztxc97HIoWo",
                                     "name": "Set Variables",
-                                    "title": "Set Variable",
+                                    "title": "Set Source Address Name",
                                     "type": "core.set_multiple_variables",
                                     "base_type": "activity",
                                     "properties": {
                                       "continue_on_failure": false,
-                                      "display_name": "Set Variable",
+                                      "display_name": "Set Source Address Name",
                                       "skip_execution": false,
                                       "variables_to_update": [
                                         {
@@ -1573,12 +1573,12 @@
                                   {
                                     "unique_name": "definition_activity_01SBA0W5J5L5E1NusD4T1cOltEBcM93vJOH",
                                     "name": "Set Variables",
-                                    "title": "Set Variables",
+                                    "title": "Set Destination Address Name",
                                     "type": "core.set_multiple_variables",
                                     "base_type": "activity",
                                     "properties": {
                                       "continue_on_failure": false,
-                                      "display_name": "Set Variables",
+                                      "display_name": "Set Destination Address Name",
                                       "skip_execution": false,
                                       "variables_to_update": [
                                         {
@@ -1787,12 +1787,12 @@
                                   {
                                     "unique_name": "definition_activity_01SBA1YP1USF17bajqR040Gc0CtrEZwMj99",
                                     "name": "Set Variables",
-                                    "title": "Set Variables",
+                                    "title": "Set Source Address Name",
                                     "type": "core.set_multiple_variables",
                                     "base_type": "activity",
                                     "properties": {
                                       "continue_on_failure": false,
-                                      "display_name": "Set Variables",
+                                      "display_name": "Set Source Address Name",
                                       "skip_execution": false,
                                       "variables_to_update": [
                                         {
@@ -1826,12 +1826,12 @@
                                   {
                                     "unique_name": "definition_activity_01SBA1YP1YICW3wTeYk7aksD83d5CES0FIo",
                                     "name": "Set Variables",
-                                    "title": "Set Variables",
+                                    "title": "Set Destination Address Name",
                                     "type": "core.set_multiple_variables",
                                     "base_type": "activity",
                                     "properties": {
                                       "continue_on_failure": false,
-                                      "display_name": "Set Variables",
+                                      "display_name": "Set Destination Address Name",
                                       "skip_execution": false,
                                       "variables_to_update": [
                                         {
@@ -2372,12 +2372,12 @@
                                   {
                                     "unique_name": "definition_activity_01SBBO2TEB93O5nyiWEyllbLfFAv34dDqRe",
                                     "name": "Set Variables",
-                                    "title": "Set Variable",
+                                    "title": "Set Source Address Group Name",
                                     "type": "core.set_multiple_variables",
                                     "base_type": "activity",
                                     "properties": {
                                       "continue_on_failure": false,
-                                      "display_name": "Set Variable",
+                                      "display_name": "Set Source Address Group Name",
                                       "skip_execution": false,
                                       "variables_to_update": [
                                         {
@@ -2411,12 +2411,12 @@
                                   {
                                     "unique_name": "definition_activity_01SBBO2TEF3CY7H1uOowfLCUQlFJzyby2ys",
                                     "name": "Set Variables",
-                                    "title": "Set Variable",
+                                    "title": "Set Destination Address Group Name",
                                     "type": "core.set_multiple_variables",
                                     "base_type": "activity",
                                     "properties": {
                                       "continue_on_failure": false,
-                                      "display_name": "Set Variable",
+                                      "display_name": "Set Destination Address Group Name",
                                       "skip_execution": false,
                                       "variables_to_update": [
                                         {
@@ -3241,12 +3241,12 @@
               {
                 "unique_name": "definition_activity_01SBDE1D57NVX59phupsKYt76nbywjyl7mx",
                 "name": "Set Variables",
-                "title": "Set Variable",
+                "title": "Set Policy Name",
                 "type": "core.set_multiple_variables",
                 "base_type": "activity",
                 "properties": {
                   "continue_on_failure": false,
-                  "display_name": "Set Variable",
+                  "display_name": "Set Policy Name",
                   "skip_execution": false,
                   "variables_to_update": [
                     {
@@ -3452,18 +3452,18 @@
     }
   },
   "atomic_workflows": [
-    "definition_workflow_01QJMY7EFE9EB0dUuvozT00neDnloTNQN05",
-    "definition_workflow_01S0C9RPDQDWD5dweMu1XWDQeA4IU48SC1F",
-    "definition_workflow_01QNX6UNITCLT5hFo0PqHo1Ajkua15WaSmO",
-    "definition_workflow_01Q2H2423CNMQ55zxmxIlndVdm1FyYI9WvB",
-    "definition_workflow_01O26LHVR14XR5ggjibxICB3qkpqZ7HuQmc",
-    "definition_workflow_01QIUK02LX1IV6JwzN4GYkZHhcTIw3RRTzf",
-    "definition_workflow_01RL0ZYE7UHXO0nAMEa55KHOiiLLvVzSQwX",
-    "definition_workflow_01QKJSE0LURMP1XIO79isiyUAXKTDDZeCGV",
     "definition_workflow_01QEKYC6UW4XZ1w1cPVACPX85Vy4BJAAbq5",
-    "definition_workflow_01RV9ELI34NB13GBEHhAGy60bTaNtnkFOEM",
-    "definition_workflow_01QCYG8UTYAXE2w8zM3Mn9RTBQXaMPNNl6e",
+    "definition_workflow_01QKJSE0LURMP1XIO79isiyUAXKTDDZeCGV",
+    "definition_workflow_01QJMY7EFE9EB0dUuvozT00neDnloTNQN05",
+    "definition_workflow_01QIUK02LX1IV6JwzN4GYkZHhcTIw3RRTzf",
+    "definition_workflow_01RZNYVXUXIG552KulMfFGCIBl8mRN1ZZvf",
     "definition_workflow_01RZGROZT4HXO7Yzmi2GzZtLdMJTJ4MB2tQ",
-    "definition_workflow_01RZNYVXUXIG552KulMfFGCIBl8mRN1ZZvf"
+    "definition_workflow_01QNX6UNITCLT5hFo0PqHo1Ajkua15WaSmO",
+    "definition_workflow_01RL0ZYE7UHXO0nAMEa55KHOiiLLvVzSQwX",
+    "definition_workflow_01O26LHVR14XR5ggjibxICB3qkpqZ7HuQmc",
+    "definition_workflow_01Q2H2423CNMQ55zxmxIlndVdm1FyYI9WvB",
+    "definition_workflow_01QCYG8UTYAXE2w8zM3Mn9RTBQXaMPNNl6e",
+    "definition_workflow_01RV9ELI34NB13GBEHhAGy60bTaNtnkFOEM",
+    "definition_workflow_01S0C9RPDQDWD5dweMu1XWDQeA4IU48SC1F"
   ]
 }
