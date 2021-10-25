@@ -11,51 +11,39 @@
         "properties": {
           "value": "",
           "scope": "local",
+          "name": "Destination Address Name",
+          "type": "datatype.string",
+          "description": "Name of the object to handle destination address.",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01SB9PIPECCAL4L4Nb6HY857fnW7uLpEx71",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "SXo",
+          "scope": "local",
+          "name": "Prefix",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01SB9LG5ALPAB7SVBpxRQNCpK6FQSnPe9Kj",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "SXo-AddressGroup-499bbb54-7e6f-467b-99db-3f18029cef4",
+          "scope": "local",
           "name": "Destination Address Group Name",
           "type": "datatype.string",
           "is_required": false,
           "is_invisible": false
         },
         "unique_name": "variable_workflow_01SBBU6YZFLHU7ivu9e9Rki8KhZrxORq6sR",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "ip",
-          "scope": "input",
-          "name": "observable_type",
-          "type": "datatype.string",
-          "is_required": true,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01S6BK8PJICEO1Sw0YZtdaQjtmobwyW8Tu9",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "local",
-          "name": "Source Address Name",
-          "type": "datatype.string",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01SB9OQ9J4RMT3JaxuNkO5BbVQBcn1GOOC1",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.boolean",
-        "properties": {
-          "value": false,
-          "scope": "local",
-          "name": "Wrong Policy Action",
-          "type": "datatype.boolean",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01SBE4UJDYJF52tMYY5CyhoutfZ3mi5RF4n",
         "object_type": "variable_workflow"
       },
       {
@@ -74,53 +62,27 @@
       {
         "schema_id": "datatype.string",
         "properties": {
-          "value": "SXo",
+          "value": "SXo-ServiceGroup-0b3787e6-7421-4547-be69-7e45b3f91381",
           "scope": "local",
-          "name": "Prefix",
+          "name": "Service Group Name",
           "type": "datatype.string",
           "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01SB9LG5ALPAB7SVBpxRQNCpK6FQSnPe9Kj",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.secure_string",
-        "properties": {
-          "value": "*****",
-          "scope": "local",
-          "name": "Access Token",
-          "type": "datatype.secure_string",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01S6BPQESSX1J2lrfBrlSyllQkTIdm3uQoe",
+        "unique_name": "variable_workflow_01SBATZ1JBTRB4y0iIpXGZkYfJNPnktOXPO",
         "object_type": "variable_workflow"
       },
       {
         "schema_id": "datatype.string",
         "properties": {
-          "value": "",
-          "scope": "local",
-          "name": "Source Group Address Name",
+          "value": "ip",
+          "scope": "input",
+          "name": "observable_type",
           "type": "datatype.string",
-          "is_required": false,
+          "is_required": true,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01SBBTW2WA37M2fvFzuIJBMyCa7GRg7ldDO",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "local",
-          "name": "Policy Name",
-          "type": "datatype.string",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01SBD5N18ZK7Z5l1EvvX4lRhjBDNkLL1VMI",
+        "unique_name": "variable_workflow_01S6BK8PJICEO1Sw0YZtdaQjtmobwyW8Tu9",
         "object_type": "variable_workflow"
       },
       {
@@ -141,13 +103,25 @@
         "properties": {
           "value": "",
           "scope": "local",
-          "name": "Destination Address Name",
+          "name": "Policy Name",
           "type": "datatype.string",
-          "description": "Name of the object to handle destination address.",
           "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01SB9PIPECCAL4L4Nb6HY857fnW7uLpEx71",
+        "unique_name": "variable_workflow_01SBD5N18ZK7Z5l1EvvX4lRhjBDNkLL1VMI",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.secure_string",
+        "properties": {
+          "value": "*****",
+          "scope": "local",
+          "name": "Access Token",
+          "type": "datatype.secure_string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01S6BPQESSX1J2lrfBrlSyllQkTIdm3uQoe",
         "object_type": "variable_workflow"
       },
       {
@@ -155,12 +129,38 @@
         "properties": {
           "value": "",
           "scope": "local",
-          "name": "Service Group Name",
+          "name": "Source Address Name",
           "type": "datatype.string",
           "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01SBATZ1JBTRB4y0iIpXGZkYfJNPnktOXPO",
+        "unique_name": "variable_workflow_01SB9OQ9J4RMT3JaxuNkO5BbVQBcn1GOOC1",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "SXo-AddressGroup-199ab7e3-3fba-4ec5-a75d-b9a0307a58e",
+          "scope": "local",
+          "name": "Source Address Group Name",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01SBBTW2WA37M2fvFzuIJBMyCa7GRg7ldDO",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.boolean",
+        "properties": {
+          "value": false,
+          "scope": "local",
+          "name": "Wrong Policy Action",
+          "type": "datatype.boolean",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01SBE4UJDYJF52tMYY5CyhoutfZ3mi5RF4n",
         "object_type": "variable_workflow"
       }
     ],
@@ -206,7 +206,7 @@
           "action_timeout": 180,
           "continue_on_failure": false,
           "display_name": "Parse input data",
-          "script": "import json\nimport sys\n\ndef read_possible_range_value(value):\n    value = [part.strip() for part in value.split('-')]\n    return '-'.join(value)\n\ndef read_protocol(protocol):\n    assert protocol in ('tcp', 'udp')\n    return protocol\n\ndef read_action(action):\n    action_mapping = {'allow': 'allow', 'block': 'deny'}\n    return action_mapping[action.lower()]\n#\ninput_data = json.loads(sys.argv[1])\ndestination_address = None\ndestination_address_type = None\nsource_address = None\nsource_address_type = None\ndestination_service = None\nprotocol = None\npre_rule = None\naction = None\nsn_task_id = None\nerror = None\nerror_mapping = {\n    KeyError: 'Input Data Error. Input JSON is not valid.',\n    AttributeError: \"Input Data Error. Destination port (port range) can't be empty.\",\n    AssertionError: \"Input Data Error. The protocol has to be one of TCP or UDP.\"\n}\ntry:\n    sn_task_id = input_data[\"ServiceNow Task ID\"]\n    destination_address = read_possible_range_value(input_data[\"Destination Host IP\"])\n    source_address = read_possible_range_value(input_data[\"Source Host IP\"])\n    destination_service = read_possible_range_value(input_data[\"Destination Port\"])\n    protocol = read_protocol(input_data[\"Protocol\"].lower())\n    pre_rule = input_data[\"Access Policy Name\"]\n    action = read_action(input_data[\"Access Action\"])\nexcept tuple(error_mapping) as exception:\n    error = error_mapping[exception.__class__]",
+          "script": "import json\nimport sys\n\ndef read_possible_range_value(value):\n    value = [part.strip() for part in value.split('-')]\n    return '-'.join(value)\n\ndef read_protocol(protocol):\n    assert protocol in ('tcp', 'udp')\n    return protocol\n\ndef read_action(action):\n    action_mapping = {'allow': 'allow', 'block': 'deny'}\n    return action_mapping[action.lower()]\n#\ninput_data = json.loads(sys.argv[1])\ndestination_address = None\ndestination_address_type = None\nsource_address = None\ndestination_service = None\nprotocol = None\npre_rule = None\naction = None\nsn_task_id = None\nerror = None\nerror_mapping = {\n    KeyError: 'Input Data Error. Input JSON is not valid.',\n    AttributeError: \"Input Data Error. Destination port (port range) can't be empty.\",\n    AssertionError: \"Input Data Error. The protocol has to be one of TCP or UDP.\"\n}\ntry:\n    sn_task_id = input_data[\"ServiceNow Task ID\"]\n    destination_address = read_possible_range_value(input_data[\"Destination Host IP\"])\n    source_address = read_possible_range_value(input_data[\"Source Host IP\"])\n    destination_service = read_possible_range_value(input_data[\"Destination Port\"])\n    protocol = read_protocol(input_data[\"Protocol\"].lower())\n    pre_rule = input_data[\"Access Policy Name\"]\n    action = read_action(input_data[\"Access Action\"])\nexcept tuple(error_mapping) as exception:\n    error = error_mapping[exception.__class__]",
           "script_arguments": [
             "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.input.variable_workflow_01S6BKDUZAOOA57IxSfv5jb9bQXWEkREkVR$"
           ],
@@ -1944,9 +1944,17 @@
                                 "base_type": "activity",
                                 "properties": {
                                   "condition": {
-                                    "left_operand": "$activity.definition_activity_01SBCKDCUKQ8T5cFauUVLpT3Xx6xzQM1TVq.output.succeeded$",
-                                    "operator": "eq",
-                                    "right_operand": false
+                                    "left_operand": {
+                                      "left_operand": "$activity.definition_activity_01SBCKDCUKQ8T5cFauUVLpT3Xx6xzQM1TVq.output.succeeded$",
+                                      "operator": "eq",
+                                      "right_operand": false
+                                    },
+                                    "operator": "and",
+                                    "right_operand": {
+                                      "left_operand": "$activity.definition_activity_01SBCKDCUKQ8T5cFauUVLpT3Xx6xzQM1TVq.output.error.message$",
+                                      "operator": "nmw",
+                                      "right_operand": "Status code: 404"
+                                    }
                                   },
                                   "continue_on_failure": false,
                                   "display_name": "Yes",
@@ -2054,7 +2062,7 @@
                                       "input": {
                                         "variable_workflow_01QCYG8UMC62K3m6m1L8dsnlM5t4unEJ0n0": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01S6BPQESSX1J2lrfBrlSyllQkTIdm3uQoe$",
                                         "variable_workflow_01QFDWH91N2T04DPadLeuWLn0hPQBEdxbgZ": "$activity.definition_activity_01SBLXA5VD2E018xRncuww9sDyvkaa6oQW2.output.script_queries.Object Name$",
-                                        "variable_workflow_01QHUHPCHZCRG19cgEY94aieokgUxEMtzaZ": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBBTW2WA37M2fvFzuIJBMyCa7GRg7ldDO$",
+                                        "variable_workflow_01QHUHPCHZCRG19cgEY94aieokgUxEMtzaZ": "$activity.definition_activity_01S6EI6UL39RW0n6VOJFesQT1e8VCwrmqSz.input.source_array[@].group$",
                                         "variable_workflow_01QZ6HUP59C8K4nUVPojPIE79ofWxLKG3Bp": "root"
                                       },
                                       "runtime_user": {
@@ -2423,29 +2431,62 @@
         ]
       },
       {
-        "unique_name": "definition_activity_01SBD4M7J4RSI3HmMwvSBwY5qr3lNWrJFd4",
+        "unique_name": "definition_activity_01SBD6B9UADAI1eDxrUDAtqqB6E4tVnT7Hh",
+        "name": "Fortinet - FortiGate - Get Policy by Name",
+        "title": "Fortinet - FortiGate - Get Policy by Name",
+        "type": "workflow.atomic_workflow",
+        "base_type": "subworkflow",
+        "properties": {
+          "continue_on_failure": true,
+          "display_name": "Fortinet - FortiGate - Get Policy by Name",
+          "input": {
+            "variable_workflow_01QIUK02DI1IF4L5JSfJ1dW6v53vUb5sKrd": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01S6BPQESSX1J2lrfBrlSyllQkTIdm3uQoe$",
+            "variable_workflow_01QIUK02DI2PR41Jf3FNKjTlsvabn7pRwAJ": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.Policy$",
+            "variable_workflow_01QZ7S20AIWUG4syV8kHuL1uInjCRVDLDJs": "root"
+          },
+          "runtime_user": {
+            "target_default": true
+          },
+          "skip_execution": false,
+          "target": {
+            "use_workflow_target_group": true
+          },
+          "workflow_id": "definition_workflow_01QIUK02LX1IV6JwzN4GYkZHhcTIw3RRTzf"
+        },
+        "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_01SBKJ43LBMO12DiEkgo45Bc7Vq2LjNYEnW",
         "name": "Condition Block",
-        "title": "Policy name provided?",
+        "title": "Critical Error Occurred?",
         "type": "logic.if_else",
         "base_type": "activity",
         "properties": {
           "continue_on_failure": false,
-          "display_name": "Policy name provided?",
+          "display_name": "Critical Error Occurred?",
           "skip_execution": false
         },
         "object_type": "definition_activity",
         "blocks": [
           {
-            "unique_name": "definition_activity_01SBD4M7S4HRU0IuvVg9wyCzxGkaQoG19zz",
+            "unique_name": "definition_activity_01SBKJ43LC5ZH4qQ1Mob4LXL3pm49U7dIqX",
             "name": "Condition Branch",
             "title": "Yes",
             "type": "logic.condition_block",
             "base_type": "activity",
             "properties": {
               "condition": {
-                "left_operand": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBD5N18ZK7Z5l1EvvX4lRhjBDNkLL1VMI$",
-                "operator": "ne",
-                "right_operand": ""
+                "left_operand": {
+                  "left_operand": "$activity.definition_activity_01SBD6B9UADAI1eDxrUDAtqqB6E4tVnT7Hh.output.succeeded$",
+                  "operator": "eq",
+                  "right_operand": false
+                },
+                "operator": "and",
+                "right_operand": {
+                  "left_operand": "$activity.definition_activity_01SBD6B9UADAI1eDxrUDAtqqB6E4tVnT7Hh.output.error.message$",
+                  "operator": "eq",
+                  "right_operand": "Status code: 404"
+                }
               },
               "continue_on_failure": false,
               "display_name": "Yes",
@@ -2454,150 +2495,139 @@
             "object_type": "definition_activity",
             "actions": [
               {
-                "unique_name": "definition_activity_01SBD6B9UADAI1eDxrUDAtqqB6E4tVnT7Hh",
-                "name": "Fortinet - FortiGate - Get Policy by Name",
-                "title": "Fortinet - FortiGate - Get Policy by Name",
+                "unique_name": "definition_activity_01SBKJ43LFX9H3HoZKWCMchsEuVaDVEKU3N",
+                "name": "ServiceNow - Add Work Note to Firewall Rule Task",
+                "title": "ServiceNow - Add Work Note to Firewall Rule Task",
                 "type": "workflow.atomic_workflow",
                 "base_type": "subworkflow",
                 "properties": {
-                  "continue_on_failure": true,
-                  "display_name": "Fortinet - FortiGate - Get Policy by Name",
+                  "continue_on_failure": false,
+                  "display_name": "ServiceNow - Add Work Note to Firewall Rule Task",
                   "input": {
-                    "variable_workflow_01QIUK02DI1IF4L5JSfJ1dW6v53vUb5sKrd": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01S6BPQESSX1J2lrfBrlSyllQkTIdm3uQoe$",
-                    "variable_workflow_01QIUK02DI2PR41Jf3FNKjTlsvabn7pRwAJ": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.Policy$",
-                    "variable_workflow_01QZ7S20AIWUG4syV8kHuL1uInjCRVDLDJs": "root"
+                    "variable_workflow_01O26LHVKETWS6NlqDRxw7LozFb5PYuORuj": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.ServiceNow Task ID$",
+                    "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e[/code]\n$activity.definition_activity_01SBD6B9UADAI1eDxrUDAtqqB6E4tVnT7Hh.output.error.message$",
+                    "variable_workflow_01OX8KRPV34425GXjwybtQzddzhwdSmpqmk": "v2"
                   },
                   "runtime_user": {
                     "target_default": true
                   },
                   "skip_execution": false,
                   "target": {
-                    "use_workflow_target_group": true
+                    "override_workflow_target_group_criteria": true,
+                    "target_group": {
+                      "run_on_all_targets": false,
+                      "use_criteria": {
+                        "choose_target_using_algorithm": "choose_first_with_matching_criteria",
+                        "conditions": [
+                          {
+                            "left_operand": "$targetgroup.web-service endpoint.input.display_name$",
+                            "operator": "eqi",
+                            "right_operand": "ServiceNow_API"
+                          }
+                        ]
+                      }
+                    }
                   },
-                  "workflow_id": "definition_workflow_01QIUK02LX1IV6JwzN4GYkZHhcTIw3RRTzf"
+                  "workflow_id": "definition_workflow_01O26LHVR14XR5ggjibxICB3qkpqZ7HuQmc"
                 },
                 "object_type": "definition_activity"
               },
               {
-                "unique_name": "definition_activity_01SBKJ43LBMO12DiEkgo45Bc7Vq2LjNYEnW",
-                "name": "Condition Block",
-                "title": "Critical Error Occurred?",
-                "type": "logic.if_else",
+                "unique_name": "definition_activity_01SBKJ43LHQZS14eOIdPOIoVBA6eC97vBaV",
+                "name": "Completed",
+                "title": "Failed",
+                "type": "logic.completed",
                 "base_type": "activity",
                 "properties": {
+                  "completion_type": "failed-completed",
                   "continue_on_failure": false,
-                  "display_name": "Critical Error Occurred?",
+                  "display_name": "Failed",
+                  "result_message": "Failed to process Threat Containment Request.\n$activity.definition_activity_01SBD6B9UADAI1eDxrUDAtqqB6E4tVnT7Hh.output.error.message$",
                   "skip_execution": false
                 },
-                "object_type": "definition_activity",
-                "blocks": [
-                  {
-                    "unique_name": "definition_activity_01SBKJ43LC5ZH4qQ1Mob4LXL3pm49U7dIqX",
-                    "name": "Condition Branch",
-                    "title": "Yes",
-                    "type": "logic.condition_block",
-                    "base_type": "activity",
-                    "properties": {
-                      "condition": {
-                        "left_operand": {
-                          "left_operand": "$activity.definition_activity_01SBD6B9UADAI1eDxrUDAtqqB6E4tVnT7Hh.output.succeeded$",
-                          "operator": "eq",
-                          "right_operand": false
-                        },
-                        "operator": "and",
-                        "right_operand": {
-                          "left_operand": "$activity.definition_activity_01SBD6B9UADAI1eDxrUDAtqqB6E4tVnT7Hh.output.error.message$",
-                          "operator": "eq",
-                          "right_operand": "Status code: 404"
-                        }
-                      },
-                      "continue_on_failure": false,
-                      "display_name": "Yes",
-                      "skip_execution": false
-                    },
-                    "object_type": "definition_activity",
-                    "actions": [
-                      {
-                        "unique_name": "definition_activity_01SBKJ43LFX9H3HoZKWCMchsEuVaDVEKU3N",
-                        "name": "ServiceNow - Add Work Note to Firewall Rule Task",
-                        "title": "ServiceNow - Add Work Note to Firewall Rule Task",
-                        "type": "workflow.atomic_workflow",
-                        "base_type": "subworkflow",
-                        "properties": {
-                          "continue_on_failure": false,
-                          "display_name": "ServiceNow - Add Work Note to Firewall Rule Task",
-                          "input": {
-                            "variable_workflow_01O26LHVKETWS6NlqDRxw7LozFb5PYuORuj": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.ServiceNow Task ID$",
-                            "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e[/code]\n$activity.definition_activity_01SBD6B9UADAI1eDxrUDAtqqB6E4tVnT7Hh.output.error.message$",
-                            "variable_workflow_01OX8KRPV34425GXjwybtQzddzhwdSmpqmk": "v2"
-                          },
-                          "runtime_user": {
-                            "target_default": true
-                          },
-                          "skip_execution": false,
-                          "target": {
-                            "override_workflow_target_group_criteria": true,
-                            "target_group": {
-                              "run_on_all_targets": false,
-                              "use_criteria": {
-                                "choose_target_using_algorithm": "choose_first_with_matching_criteria",
-                                "conditions": [
-                                  {
-                                    "left_operand": "$targetgroup.web-service endpoint.input.display_name$",
-                                    "operator": "eqi",
-                                    "right_operand": "ServiceNow_API"
-                                  }
-                                ]
-                              }
-                            }
-                          },
-                          "workflow_id": "definition_workflow_01O26LHVR14XR5ggjibxICB3qkpqZ7HuQmc"
-                        },
-                        "object_type": "definition_activity"
-                      },
-                      {
-                        "unique_name": "definition_activity_01SBKJ43LHQZS14eOIdPOIoVBA6eC97vBaV",
-                        "name": "Completed",
-                        "title": "Failed",
-                        "type": "logic.completed",
-                        "base_type": "activity",
-                        "properties": {
-                          "completion_type": "failed-completed",
-                          "continue_on_failure": false,
-                          "display_name": "Failed",
-                          "result_message": "Failed to process Threat Containment Request.\n$activity.definition_activity_01SBD6B9UADAI1eDxrUDAtqqB6E4tVnT7Hh.output.error.message$",
-                          "skip_execution": false
-                        },
-                        "object_type": "definition_activity"
-                      }
-                    ]
-                  }
-                ]
+                "object_type": "definition_activity"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "unique_name": "definition_activity_01SBEDJV038HB4BKHAl73U9KTlBvZKzGsQe",
+        "name": "Condition Block",
+        "title": "Policy Name found?",
+        "type": "logic.if_else",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "display_name": "Policy Name found?",
+          "skip_execution": false
+        },
+        "object_type": "definition_activity",
+        "blocks": [
+          {
+            "unique_name": "definition_activity_01SBEDJV8E7P15QNc1hf1xBH765N6GxLt1p",
+            "name": "Condition Branch",
+            "title": "Yes",
+            "type": "logic.condition_block",
+            "base_type": "activity",
+            "properties": {
+              "condition": {
+                "left_operand": "$activity.definition_activity_01SBD6B9UADAI1eDxrUDAtqqB6E4tVnT7Hh.output.succeeded$",
+                "operator": "eq",
+                "right_operand": true
+              },
+              "continue_on_failure": false,
+              "display_name": "Yes",
+              "skip_execution": false
+            },
+            "object_type": "definition_activity",
+            "actions": [
+              {
+                "unique_name": "definition_activity_01SBDPZ2K34A77FN5sJYXgBiNaLSYznr0Oe",
+                "name": "JSONPath Query",
+                "title": "Extract Policy Action",
+                "type": "corejava.jsonpathquery",
+                "base_type": "activity",
+                "properties": {
+                  "action_timeout": 180,
+                  "continue_on_failure": false,
+                  "display_name": "Extract Policy Action",
+                  "input_json": "$activity.definition_activity_01SBD6B9UADAI1eDxrUDAtqqB6E4tVnT7Hh.output.variable_workflow_01QIUK02DI7JL4sgSk2xE8cVHVvCv30Hgas$",
+                  "jsonpath_queries": [
+                    {
+                      "jsonpath_query": ".results[0].action",
+                      "jsonpath_query_name": "Action",
+                      "jsonpath_query_type": "string"
+                    }
+                  ],
+                  "skip_execution": false
+                },
+                "object_type": "definition_activity"
               },
               {
-                "unique_name": "definition_activity_01SBEDJV038HB4BKHAl73U9KTlBvZKzGsQe",
+                "unique_name": "definition_activity_01SBDRM869XVF1EG14C8YYZeeV8GLogZtQt",
                 "name": "Condition Block",
-                "title": "Policy Name found?",
+                "title": "Action correct?",
                 "type": "logic.if_else",
                 "base_type": "activity",
                 "properties": {
                   "continue_on_failure": false,
-                  "display_name": "Policy Name found?",
+                  "display_name": "Action correct?",
                   "skip_execution": false
                 },
                 "object_type": "definition_activity",
                 "blocks": [
                   {
-                    "unique_name": "definition_activity_01SBEDJV8E7P15QNc1hf1xBH765N6GxLt1p",
+                    "unique_name": "definition_activity_01SBDRM8DP7Z45lzKl1JEClEVjWoBiGyGbS",
                     "name": "Condition Branch",
                     "title": "Yes",
                     "type": "logic.condition_block",
                     "base_type": "activity",
                     "properties": {
                       "condition": {
-                        "left_operand": "$activity.definition_activity_01SBD6B9UADAI1eDxrUDAtqqB6E4tVnT7Hh.output.succeeded$",
-                        "operator": "eq",
-                        "right_operand": true
+                        "left_operand": "$activity.definition_activity_01SBDPZ2K34A77FN5sJYXgBiNaLSYznr0Oe.output.jsonpath_queries.Action$",
+                        "operator": "eqi",
+                        "right_operand": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.Action$"
                       },
                       "continue_on_failure": false,
                       "display_name": "Yes",
@@ -2606,295 +2636,22 @@
                     "object_type": "definition_activity",
                     "actions": [
                       {
-                        "unique_name": "definition_activity_01SBDPZ2K34A77FN5sJYXgBiNaLSYznr0Oe",
-                        "name": "JSONPath Query",
-                        "title": "Extract Policy Action",
-                        "type": "corejava.jsonpathquery",
-                        "base_type": "activity",
-                        "properties": {
-                          "action_timeout": 180,
-                          "continue_on_failure": false,
-                          "display_name": "Extract Policy Action",
-                          "input_json": "$activity.definition_activity_01SBD6B9UADAI1eDxrUDAtqqB6E4tVnT7Hh.output.variable_workflow_01QIUK02DI7JL4sgSk2xE8cVHVvCv30Hgas$",
-                          "jsonpath_queries": [
-                            {
-                              "jsonpath_query": ".results[0].action",
-                              "jsonpath_query_name": "Action",
-                              "jsonpath_query_type": "string"
-                            }
-                          ],
-                          "skip_execution": false
-                        },
-                        "object_type": "definition_activity"
-                      },
-                      {
-                        "unique_name": "definition_activity_01SBDRM869XVF1EG14C8YYZeeV8GLogZtQt",
-                        "name": "Condition Block",
-                        "title": "Action correct?",
-                        "type": "logic.if_else",
-                        "base_type": "activity",
-                        "properties": {
-                          "continue_on_failure": false,
-                          "display_name": "Action correct?",
-                          "skip_execution": false
-                        },
-                        "object_type": "definition_activity",
-                        "blocks": [
-                          {
-                            "unique_name": "definition_activity_01SBDRM8DP7Z45lzKl1JEClEVjWoBiGyGbS",
-                            "name": "Condition Branch",
-                            "title": "Yes",
-                            "type": "logic.condition_block",
-                            "base_type": "activity",
-                            "properties": {
-                              "condition": {
-                                "left_operand": "$activity.definition_activity_01SBDPZ2K34A77FN5sJYXgBiNaLSYznr0Oe.output.jsonpath_queries.Action$",
-                                "operator": "eqi",
-                                "right_operand": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.Action$"
-                              },
-                              "continue_on_failure": false,
-                              "display_name": "Yes",
-                              "skip_execution": false
-                            },
-                            "object_type": "definition_activity",
-                            "actions": [
-                              {
-                                "unique_name": "definition_activity_01SBEHNV3YOGB7b5X3pdHIoWr5HWkSXlV8R",
-                                "name": "Fortinet - FortiGate - Update Firewall Policy",
-                                "title": "Fortinet - FortiGate - Update Firewall Policy",
-                                "type": "workflow.atomic_workflow",
-                                "base_type": "subworkflow",
-                                "properties": {
-                                  "continue_on_failure": true,
-                                  "display_name": "Fortinet - FortiGate - Update Firewall Policy",
-                                  "input": {
-                                    "variable_workflow_01QNX6UNA0R2440XMUMiAAL1zqP9YwBrOUC": "",
-                                    "variable_workflow_01QNX6UNA0WA022tb2ooU9vbzpN6TovSCiC": "$activity.definition_activity_01SBD6B9UADAI1eDxrUDAtqqB6E4tVnT7Hh.output.variable_workflow_01QIUK02DHUFV5m3AAJ9VSfPBXcC36ZMSTB$",
-                                    "variable_workflow_01QNX6UNA0ZY73OjTb7JSXIDO1uivd13tDq": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBBTW2WA37M2fvFzuIJBMyCa7GRg7ldDO$",
-                                    "variable_workflow_01QNX6UNA15056jt8u1hL24BzMRo5ZSzL25": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01S6BPQESSX1J2lrfBrlSyllQkTIdm3uQoe$",
-                                    "variable_workflow_01QNX6UNA16KB5NHApxJFEu93dlrxEdD7DK": "root",
-                                    "variable_workflow_01QNZNYDZ0G953p4PSo6QbYK3xG0Mhhoymi": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBBU6YZFLHU7ivu9e9Rki8KhZrxORq6sR$",
-                                    "variable_workflow_01QNZPXCL0G923vude6JTUJukZjKxAnKpRB": ""
-                                  },
-                                  "runtime_user": {
-                                    "target_default": true
-                                  },
-                                  "skip_execution": false,
-                                  "target": {
-                                    "use_workflow_target_group": true
-                                  },
-                                  "workflow_id": "definition_workflow_01QNX6UNITCLT5hFo0PqHo1Ajkua15WaSmO"
-                                },
-                                "object_type": "definition_activity"
-                              },
-                              {
-                                "unique_name": "definition_activity_01SBKM3Y2CGBH3n0HAHKtzVgCTaR1Xcxgvm",
-                                "name": "Condition Block",
-                                "title": "Critical Error Occurred?",
-                                "type": "logic.if_else",
-                                "base_type": "activity",
-                                "properties": {
-                                  "continue_on_failure": false,
-                                  "display_name": "Critical Error Occurred?",
-                                  "skip_execution": false
-                                },
-                                "object_type": "definition_activity",
-                                "blocks": [
-                                  {
-                                    "unique_name": "definition_activity_01SBKM3Y2D0PM7SyCAehvGG8RWuCyhdJrqw",
-                                    "name": "Condition Branch",
-                                    "title": "Yes",
-                                    "type": "logic.condition_block",
-                                    "base_type": "activity",
-                                    "properties": {
-                                      "condition": {
-                                        "left_operand": "$activity.definition_activity_01SBEHNV3YOGB7b5X3pdHIoWr5HWkSXlV8R.output.succeeded$",
-                                        "operator": "eq",
-                                        "right_operand": false
-                                      },
-                                      "continue_on_failure": false,
-                                      "display_name": "Yes",
-                                      "skip_execution": false
-                                    },
-                                    "object_type": "definition_activity",
-                                    "actions": [
-                                      {
-                                        "unique_name": "definition_activity_01SBKM3Y2IR2B6pjlXPGmyx9h3VkVKU9NZj",
-                                        "name": "ServiceNow - Add Work Note to Firewall Rule Task",
-                                        "title": "ServiceNow - Add Work Note to Firewall Rule Task",
-                                        "type": "workflow.atomic_workflow",
-                                        "base_type": "subworkflow",
-                                        "properties": {
-                                          "continue_on_failure": false,
-                                          "display_name": "ServiceNow - Add Work Note to Firewall Rule Task",
-                                          "input": {
-                                            "variable_workflow_01O26LHVKETWS6NlqDRxw7LozFb5PYuORuj": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.ServiceNow Task ID$",
-                                            "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e[/code]\n$activity.definition_activity_01SBEHNV3YOGB7b5X3pdHIoWr5HWkSXlV8R.output.error.message$",
-                                            "variable_workflow_01OX8KRPV34425GXjwybtQzddzhwdSmpqmk": "v2"
-                                          },
-                                          "runtime_user": {
-                                            "target_default": true
-                                          },
-                                          "skip_execution": false,
-                                          "target": {
-                                            "override_workflow_target_group_criteria": true,
-                                            "target_group": {
-                                              "run_on_all_targets": false,
-                                              "use_criteria": {
-                                                "choose_target_using_algorithm": "choose_first_with_matching_criteria",
-                                                "conditions": [
-                                                  {
-                                                    "left_operand": "$targetgroup.web-service endpoint.input.display_name$",
-                                                    "operator": "eqi",
-                                                    "right_operand": "ServiceNow_API"
-                                                  }
-                                                ]
-                                              }
-                                            }
-                                          },
-                                          "workflow_id": "definition_workflow_01O26LHVR14XR5ggjibxICB3qkpqZ7HuQmc"
-                                        },
-                                        "object_type": "definition_activity"
-                                      },
-                                      {
-                                        "unique_name": "definition_activity_01SBKM3Y2KIO74KJgd5CFoWpLEk3LzmTWhZ",
-                                        "name": "Completed",
-                                        "title": "Failed",
-                                        "type": "logic.completed",
-                                        "base_type": "activity",
-                                        "properties": {
-                                          "completion_type": "failed-completed",
-                                          "continue_on_failure": false,
-                                          "display_name": "Failed",
-                                          "result_message": "Failed to process Threat Containment Request.\n$activity.definition_activity_01SBEHNV3YOGB7b5X3pdHIoWr5HWkSXlV8R.output.error.message$",
-                                          "skip_execution": false
-                                        },
-                                        "object_type": "definition_activity"
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
-                          },
-                          {
-                            "unique_name": "definition_activity_01SBE3SJA8BHV3hR5m9Uby7bBT2jeC7YglB",
-                            "name": "Condition Branch",
-                            "title": "No",
-                            "type": "logic.condition_block",
-                            "base_type": "activity",
-                            "properties": {
-                              "condition": {
-                                "left_operand": "$activity.definition_activity_01SBDPZ2K34A77FN5sJYXgBiNaLSYznr0Oe.output.jsonpath_queries.Action$",
-                                "operator": "ne",
-                                "right_operand": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.Action$"
-                              },
-                              "continue_on_failure": false,
-                              "display_name": "No",
-                              "skip_execution": false
-                            },
-                            "object_type": "definition_activity",
-                            "actions": [
-                              {
-                                "unique_name": "definition_activity_01SBE40AXO4JO0V4u07ECMDgVYqOkN4559C",
-                                "name": "Set Variables",
-                                "title": "Set Variable Wrong Policy Action",
-                                "type": "core.set_multiple_variables",
-                                "base_type": "activity",
-                                "properties": {
-                                  "continue_on_failure": false,
-                                  "display_name": "Set Variable Wrong Policy Action",
-                                  "skip_execution": false,
-                                  "variables_to_update": [
-                                    {
-                                      "variable_to_update": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBE4UJDYJF52tMYY5CyhoutfZ3mi5RF4n$",
-                                      "variable_value_new": true
-                                    }
-                                  ]
-                                },
-                                "object_type": "definition_activity"
-                              },
-                              {
-                                "unique_name": "definition_activity_01SBKOCK2BG760NczhYzbik268A1zUxqIyC",
-                                "name": "ServiceNow - Add Work Note to Firewall Rule Task",
-                                "title": "ServiceNow - Add Work Note to Firewall Rule Task",
-                                "type": "workflow.atomic_workflow",
-                                "base_type": "subworkflow",
-                                "properties": {
-                                  "continue_on_failure": false,
-                                  "display_name": "ServiceNow - Add Work Note to Firewall Rule Task",
-                                  "input": {
-                                    "variable_workflow_01O26LHVKETWS6NlqDRxw7LozFb5PYuORuj": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.ServiceNow Task ID$",
-                                    "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e\nThe Policy \"$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBD5N18ZK7Z5l1EvvX4lRhjBDNkLL1VMI$\" has the wrong action (\u003cb\u003e$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.Action$\u003c/b\u003e instead of \u003cb\u003e$activity.definition_activity_01SBDPZ2K34A77FN5sJYXgBiNaLSYznr0Oe.output.jsonpath_queries.Action$\u003c/b\u003e), so that a new Policy will be created.\n[/code]",
-                                    "variable_workflow_01OX8KRPV34425GXjwybtQzddzhwdSmpqmk": "v2"
-                                  },
-                                  "runtime_user": {
-                                    "target_default": true
-                                  },
-                                  "skip_execution": false,
-                                  "target": {
-                                    "override_workflow_target_group_criteria": true,
-                                    "target_group": {
-                                      "run_on_all_targets": false,
-                                      "use_criteria": {
-                                        "choose_target_using_algorithm": "choose_first_with_matching_criteria",
-                                        "conditions": [
-                                          {
-                                            "left_operand": "$targetgroup.web-service endpoint.input.display_name$",
-                                            "operator": "eqi",
-                                            "right_operand": "ServiceNow_API"
-                                          }
-                                        ]
-                                      }
-                                    }
-                                  },
-                                  "workflow_id": "definition_workflow_01O26LHVR14XR5ggjibxICB3qkpqZ7HuQmc"
-                                },
-                                "object_type": "definition_activity"
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "unique_name": "definition_activity_01SBEDJVFM76G5R89SyHs04VARrqC8jknYA",
-                    "name": "Condition Branch",
-                    "title": "No",
-                    "type": "logic.condition_block",
-                    "base_type": "activity",
-                    "properties": {
-                      "condition": {
-                        "left_operand": "$activity.definition_activity_01SBD6B9UADAI1eDxrUDAtqqB6E4tVnT7Hh.output.succeeded$",
-                        "operator": "eq",
-                        "right_operand": false
-                      },
-                      "continue_on_failure": false,
-                      "display_name": "No",
-                      "skip_execution": false
-                    },
-                    "object_type": "definition_activity",
-                    "actions": [
-                      {
-                        "unique_name": "definition_activity_01SBEFIZ4C1442sCBLicrtrprWWjXAv0wPk",
-                        "name": "Fortinet - FortiGate - Create Firewall Policy",
-                        "title": "Fortinet - FortiGate - Create Firewall Policy",
+                        "unique_name": "definition_activity_01SBEHNV3YOGB7b5X3pdHIoWr5HWkSXlV8R",
+                        "name": "Fortinet - FortiGate - Update Firewall Policy",
+                        "title": "Fortinet - FortiGate - Update Firewall Policy",
                         "type": "workflow.atomic_workflow",
                         "base_type": "subworkflow",
                         "properties": {
                           "continue_on_failure": true,
-                          "display_name": "Fortinet - FortiGate - Create Firewall Policy",
+                          "display_name": "Fortinet - FortiGate - Update Firewall Policy",
                           "input": {
-                            "variable_workflow_01QEKYC6NLUY01wNt1j7ZE7dX5FRo7AHclU": "",
-                            "variable_workflow_01QEKYC6NM3EZ3biMNp14AAr4Xt4cnAW7oo": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01S6BPQESSX1J2lrfBrlSyllQkTIdm3uQoe$",
-                            "variable_workflow_01QENMW1213UT0Dd0NnaSmzCwtvdpqEFy01": "",
-                            "variable_workflow_01QENN5K8VOH4209wiKKonbcMpW7qHgdB4l": "",
-                            "variable_workflow_01QHXEVCCL0NG1kqFXbO2K8WzTcQeqEiSOW": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBBTW2WA37M2fvFzuIJBMyCa7GRg7ldDO$",
-                            "variable_workflow_01QHXFEOX0FUH6A5VGkORz8y0SsG8SWCLBS": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBBU6YZFLHU7ivu9e9Rki8KhZrxORq6sR$",
-                            "variable_workflow_01QHXGJ3NBMN8476dbsFaHZ1G5UQ7oA4iKV": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.Action$",
-                            "variable_workflow_01QHXR0MUE9A55M1Jmtb6EUmVVBzEhR4r1F": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.Policy$",
-                            "variable_workflow_01QZ7D0M9PNUC4Z3zAHPZBFuhNfP9HfA5RL": "root"
+                            "variable_workflow_01QNX6UNA0R2440XMUMiAAL1zqP9YwBrOUC": "",
+                            "variable_workflow_01QNX6UNA0WA022tb2ooU9vbzpN6TovSCiC": "$activity.definition_activity_01SBD6B9UADAI1eDxrUDAtqqB6E4tVnT7Hh.output.variable_workflow_01QIUK02DHUFV5m3AAJ9VSfPBXcC36ZMSTB$",
+                            "variable_workflow_01QNX6UNA0ZY73OjTb7JSXIDO1uivd13tDq": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBBTW2WA37M2fvFzuIJBMyCa7GRg7ldDO$",
+                            "variable_workflow_01QNX6UNA15056jt8u1hL24BzMRo5ZSzL25": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01S6BPQESSX1J2lrfBrlSyllQkTIdm3uQoe$",
+                            "variable_workflow_01QNX6UNA16KB5NHApxJFEu93dlrxEdD7DK": "root",
+                            "variable_workflow_01QNZNYDZ0G953p4PSo6QbYK3xG0Mhhoymi": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBBU6YZFLHU7ivu9e9Rki8KhZrxORq6sR$",
+                            "variable_workflow_01QNZPXCL0G923vude6JTUJukZjKxAnKpRB": ""
                           },
                           "runtime_user": {
                             "target_default": true
@@ -2903,12 +2660,12 @@
                           "target": {
                             "use_workflow_target_group": true
                           },
-                          "workflow_id": "definition_workflow_01QEKYC6UW4XZ1w1cPVACPX85Vy4BJAAbq5"
+                          "workflow_id": "definition_workflow_01QNX6UNITCLT5hFo0PqHo1Ajkua15WaSmO"
                         },
                         "object_type": "definition_activity"
                       },
                       {
-                        "unique_name": "definition_activity_01SBKL5F7CAZB18O9kxlevwWZZdeBuJIyIg",
+                        "unique_name": "definition_activity_01SBKM3Y2CGBH3n0HAHKtzVgCTaR1Xcxgvm",
                         "name": "Condition Block",
                         "title": "Critical Error Occurred?",
                         "type": "logic.if_else",
@@ -2921,14 +2678,14 @@
                         "object_type": "definition_activity",
                         "blocks": [
                           {
-                            "unique_name": "definition_activity_01SBKL5F7CX144DSzgXG6AWmn8n2qOqMy5h",
+                            "unique_name": "definition_activity_01SBKM3Y2D0PM7SyCAehvGG8RWuCyhdJrqw",
                             "name": "Condition Branch",
                             "title": "Yes",
                             "type": "logic.condition_block",
                             "base_type": "activity",
                             "properties": {
                               "condition": {
-                                "left_operand": "$activity.definition_activity_01SBEFIZ4C1442sCBLicrtrprWWjXAv0wPk.output.succeeded$",
+                                "left_operand": "$activity.definition_activity_01SBEHNV3YOGB7b5X3pdHIoWr5HWkSXlV8R.output.succeeded$",
                                 "operator": "eq",
                                 "right_operand": false
                               },
@@ -2939,7 +2696,7 @@
                             "object_type": "definition_activity",
                             "actions": [
                               {
-                                "unique_name": "definition_activity_01SBKL5F7GL447cQGFMblUSBbjnFDOFTIsz",
+                                "unique_name": "definition_activity_01SBKM3Y2IR2B6pjlXPGmyx9h3VkVKU9NZj",
                                 "name": "ServiceNow - Add Work Note to Firewall Rule Task",
                                 "title": "ServiceNow - Add Work Note to Firewall Rule Task",
                                 "type": "workflow.atomic_workflow",
@@ -2949,7 +2706,7 @@
                                   "display_name": "ServiceNow - Add Work Note to Firewall Rule Task",
                                   "input": {
                                     "variable_workflow_01O26LHVKETWS6NlqDRxw7LozFb5PYuORuj": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.ServiceNow Task ID$",
-                                    "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e[/code]\n$activity.definition_activity_01SBEFIZ4C1442sCBLicrtrprWWjXAv0wPk.output.error.message$",
+                                    "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e[/code]\n$activity.definition_activity_01SBEHNV3YOGB7b5X3pdHIoWr5HWkSXlV8R.output.error.message$",
                                     "variable_workflow_01OX8KRPV34425GXjwybtQzddzhwdSmpqmk": "v2"
                                   },
                                   "runtime_user": {
@@ -2977,7 +2734,7 @@
                                 "object_type": "definition_activity"
                               },
                               {
-                                "unique_name": "definition_activity_01SBKL5F7IBQQ5BJbdN3SwQrZf3bxbxWKTm",
+                                "unique_name": "definition_activity_01SBKM3Y2KIO74KJgd5CFoWpLEk3LzmTWhZ",
                                 "name": "Completed",
                                 "title": "Failed",
                                 "type": "logic.completed",
@@ -2986,7 +2743,7 @@
                                   "completion_type": "failed-completed",
                                   "continue_on_failure": false,
                                   "display_name": "Failed",
-                                  "result_message": "Failed to process Threat Containment Request.\n$activity.definition_activity_01SBEFIZ4C1442sCBLicrtrprWWjXAv0wPk.output.error.message$",
+                                  "result_message": "Failed to process Threat Containment Request.\n$activity.definition_activity_01SBEHNV3YOGB7b5X3pdHIoWr5HWkSXlV8R.output.error.message$",
                                   "skip_execution": false
                                 },
                                 "object_type": "definition_activity"
@@ -2996,7 +2753,65 @@
                         ]
                       },
                       {
-                        "unique_name": "definition_activity_01SBKN65A2FWW1h63YU29FLqN60yub6PphL",
+                        "unique_name": "definition_activity_01SBMUF8R8NNL1dasm5gnhc1yIaY6mGuh33",
+                        "name": "Set Variables",
+                        "title": "Set Variable",
+                        "type": "core.set_multiple_variables",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "display_name": "Set Variable",
+                          "skip_execution": false,
+                          "variables_to_update": [
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBD5N18ZK7Z5l1EvvX4lRhjBDNkLL1VMI$",
+                              "variable_value_new": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.Policy$"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_01SBE3SJA8BHV3hR5m9Uby7bBT2jeC7YglB",
+                    "name": "Condition Branch",
+                    "title": "No",
+                    "type": "logic.condition_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "condition": {
+                        "left_operand": "$activity.definition_activity_01SBDPZ2K34A77FN5sJYXgBiNaLSYznr0Oe.output.jsonpath_queries.Action$",
+                        "operator": "ne",
+                        "right_operand": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.Action$"
+                      },
+                      "continue_on_failure": false,
+                      "display_name": "No",
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_01SBE40AXO4JO0V4u07ECMDgVYqOkN4559C",
+                        "name": "Set Variables",
+                        "title": "Set Variable Wrong Policy Action",
+                        "type": "core.set_multiple_variables",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "display_name": "Set Variable Wrong Policy Action",
+                          "skip_execution": false,
+                          "variables_to_update": [
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBE4UJDYJF52tMYY5CyhoutfZ3mi5RF4n$",
+                              "variable_value_new": true
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_01SBKOCK2BG760NczhYzbik268A1zUxqIyC",
                         "name": "ServiceNow - Add Work Note to Firewall Rule Task",
                         "title": "ServiceNow - Add Work Note to Firewall Rule Task",
                         "type": "workflow.atomic_workflow",
@@ -3006,7 +2821,7 @@
                           "display_name": "ServiceNow - Add Work Note to Firewall Rule Task",
                           "input": {
                             "variable_workflow_01O26LHVKETWS6NlqDRxw7LozFb5PYuORuj": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.ServiceNow Task ID$",
-                            "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e[/code]\nFirawall Policy \"$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBD5N18ZK7Z5l1EvvX4lRhjBDNkLL1VMI$\" was not found, but the new Policy with the name \"$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBD5N18ZK7Z5l1EvvX4lRhjBDNkLL1VMI$\" was created instead.",
+                            "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e\nThe Policy \"$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBD5N18ZK7Z5l1EvvX4lRhjBDNkLL1VMI$\" has the wrong action (\u003cb\u003e$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.Action$\u003c/b\u003e instead of \u003cb\u003e$activity.definition_activity_01SBDPZ2K34A77FN5sJYXgBiNaLSYznr0Oe.output.jsonpath_queries.Action$\u003c/b\u003e), so that a new Policy will be created.\n[/code]",
                             "variable_workflow_01OX8KRPV34425GXjwybtQzddzhwdSmpqmk": "v2"
                           },
                           "runtime_user": {
@@ -3038,18 +2853,214 @@
                 ]
               }
             ]
+          },
+          {
+            "unique_name": "definition_activity_01SBEDJVFM76G5R89SyHs04VARrqC8jknYA",
+            "name": "Condition Branch",
+            "title": "No",
+            "type": "logic.condition_block",
+            "base_type": "activity",
+            "properties": {
+              "condition": {
+                "left_operand": "$activity.definition_activity_01SBD6B9UADAI1eDxrUDAtqqB6E4tVnT7Hh.output.succeeded$",
+                "operator": "eq",
+                "right_operand": false
+              },
+              "continue_on_failure": false,
+              "display_name": "No",
+              "skip_execution": false
+            },
+            "object_type": "definition_activity",
+            "actions": [
+              {
+                "unique_name": "definition_activity_01SBEFIZ4C1442sCBLicrtrprWWjXAv0wPk",
+                "name": "Fortinet - FortiGate - Create Firewall Policy",
+                "title": "Fortinet - FortiGate - Create Firewall Policy",
+                "type": "workflow.atomic_workflow",
+                "base_type": "subworkflow",
+                "properties": {
+                  "continue_on_failure": true,
+                  "display_name": "Fortinet - FortiGate - Create Firewall Policy",
+                  "input": {
+                    "variable_workflow_01QEKYC6NLUY01wNt1j7ZE7dX5FRo7AHclU": "",
+                    "variable_workflow_01QEKYC6NM3EZ3biMNp14AAr4Xt4cnAW7oo": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01S6BPQESSX1J2lrfBrlSyllQkTIdm3uQoe$",
+                    "variable_workflow_01QENMW1213UT0Dd0NnaSmzCwtvdpqEFy01": "",
+                    "variable_workflow_01QENN5K8VOH4209wiKKonbcMpW7qHgdB4l": "",
+                    "variable_workflow_01QHXEVCCL0NG1kqFXbO2K8WzTcQeqEiSOW": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBBTW2WA37M2fvFzuIJBMyCa7GRg7ldDO$",
+                    "variable_workflow_01QHXFEOX0FUH6A5VGkORz8y0SsG8SWCLBS": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBBU6YZFLHU7ivu9e9Rki8KhZrxORq6sR$",
+                    "variable_workflow_01QHXGJ3NBMN8476dbsFaHZ1G5UQ7oA4iKV": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.Action$",
+                    "variable_workflow_01QHXR0MUE9A55M1Jmtb6EUmVVBzEhR4r1F": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.Policy$",
+                    "variable_workflow_01QZ7D0M9PNUC4Z3zAHPZBFuhNfP9HfA5RL": "root"
+                  },
+                  "runtime_user": {
+                    "target_default": true
+                  },
+                  "skip_execution": false,
+                  "target": {
+                    "use_workflow_target_group": true
+                  },
+                  "workflow_id": "definition_workflow_01QEKYC6UW4XZ1w1cPVACPX85Vy4BJAAbq5"
+                },
+                "object_type": "definition_activity"
+              },
+              {
+                "unique_name": "definition_activity_01SBKL5F7CAZB18O9kxlevwWZZdeBuJIyIg",
+                "name": "Condition Block",
+                "title": "Critical Error Occurred?",
+                "type": "logic.if_else",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "display_name": "Critical Error Occurred?",
+                  "skip_execution": false
+                },
+                "object_type": "definition_activity",
+                "blocks": [
+                  {
+                    "unique_name": "definition_activity_01SBKL5F7CX144DSzgXG6AWmn8n2qOqMy5h",
+                    "name": "Condition Branch",
+                    "title": "Yes",
+                    "type": "logic.condition_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "condition": {
+                        "left_operand": "$activity.definition_activity_01SBEFIZ4C1442sCBLicrtrprWWjXAv0wPk.output.succeeded$",
+                        "operator": "eq",
+                        "right_operand": false
+                      },
+                      "continue_on_failure": false,
+                      "display_name": "Yes",
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_01SBKL5F7GL447cQGFMblUSBbjnFDOFTIsz",
+                        "name": "ServiceNow - Add Work Note to Firewall Rule Task",
+                        "title": "ServiceNow - Add Work Note to Firewall Rule Task",
+                        "type": "workflow.atomic_workflow",
+                        "base_type": "subworkflow",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "display_name": "ServiceNow - Add Work Note to Firewall Rule Task",
+                          "input": {
+                            "variable_workflow_01O26LHVKETWS6NlqDRxw7LozFb5PYuORuj": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.ServiceNow Task ID$",
+                            "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e[/code]\n$activity.definition_activity_01SBEFIZ4C1442sCBLicrtrprWWjXAv0wPk.output.error.message$",
+                            "variable_workflow_01OX8KRPV34425GXjwybtQzddzhwdSmpqmk": "v2"
+                          },
+                          "runtime_user": {
+                            "target_default": true
+                          },
+                          "skip_execution": false,
+                          "target": {
+                            "override_workflow_target_group_criteria": true,
+                            "target_group": {
+                              "run_on_all_targets": false,
+                              "use_criteria": {
+                                "choose_target_using_algorithm": "choose_first_with_matching_criteria",
+                                "conditions": [
+                                  {
+                                    "left_operand": "$targetgroup.web-service endpoint.input.display_name$",
+                                    "operator": "eqi",
+                                    "right_operand": "ServiceNow_API"
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          "workflow_id": "definition_workflow_01O26LHVR14XR5ggjibxICB3qkpqZ7HuQmc"
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_01SBKL5F7IBQQ5BJbdN3SwQrZf3bxbxWKTm",
+                        "name": "Completed",
+                        "title": "Failed",
+                        "type": "logic.completed",
+                        "base_type": "activity",
+                        "properties": {
+                          "completion_type": "failed-completed",
+                          "continue_on_failure": false,
+                          "display_name": "Failed",
+                          "result_message": "Failed to process Threat Containment Request.\n$activity.definition_activity_01SBEFIZ4C1442sCBLicrtrprWWjXAv0wPk.output.error.message$",
+                          "skip_execution": false
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "unique_name": "definition_activity_01SBMV7GYWCQD5vRbLnajDMc5iRKX1CUgEQ",
+                "name": "Set Variables",
+                "title": "Set Variable",
+                "type": "core.set_multiple_variables",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "display_name": "Set Variable",
+                  "skip_execution": false,
+                  "variables_to_update": [
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBD5N18ZK7Z5l1EvvX4lRhjBDNkLL1VMI$",
+                      "variable_value_new": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.Policy$"
+                    }
+                  ]
+                },
+                "object_type": "definition_activity"
+              },
+              {
+                "unique_name": "definition_activity_01SBKN65A2FWW1h63YU29FLqN60yub6PphL",
+                "name": "ServiceNow - Add Work Note to Firewall Rule Task",
+                "title": "ServiceNow - Add Work Note to Firewall Rule Task",
+                "type": "workflow.atomic_workflow",
+                "base_type": "subworkflow",
+                "properties": {
+                  "continue_on_failure": false,
+                  "display_name": "ServiceNow - Add Work Note to Firewall Rule Task",
+                  "input": {
+                    "variable_workflow_01O26LHVKETWS6NlqDRxw7LozFb5PYuORuj": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.ServiceNow Task ID$",
+                    "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e[/code]\nFirawall Policy \"$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBD5N18ZK7Z5l1EvvX4lRhjBDNkLL1VMI$\" was not found, but the new Policy with the name \"$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBD5N18ZK7Z5l1EvvX4lRhjBDNkLL1VMI$\" was created instead.",
+                    "variable_workflow_01OX8KRPV34425GXjwybtQzddzhwdSmpqmk": "v2"
+                  },
+                  "runtime_user": {
+                    "target_default": true
+                  },
+                  "skip_execution": false,
+                  "target": {
+                    "override_workflow_target_group_criteria": true,
+                    "target_group": {
+                      "run_on_all_targets": false,
+                      "use_criteria": {
+                        "choose_target_using_algorithm": "choose_first_with_matching_criteria",
+                        "conditions": [
+                          {
+                            "left_operand": "$targetgroup.web-service endpoint.input.display_name$",
+                            "operator": "eqi",
+                            "right_operand": "ServiceNow_API"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "workflow_id": "definition_workflow_01O26LHVR14XR5ggjibxICB3qkpqZ7HuQmc"
+                },
+                "object_type": "definition_activity"
+              }
+            ]
           }
         ]
       },
       {
         "unique_name": "definition_activity_01SBEAYO9ZHPO1fWcB0FQN9oRSP4tQcHcEZ",
         "name": "Condition Block",
-        "title": "Policy Name not provided or has wrong action?",
+        "title": "Policy has wrong action?",
         "type": "logic.if_else",
         "base_type": "activity",
         "properties": {
           "continue_on_failure": false,
-          "display_name": "Policy Name not provided or has wrong action?",
+          "display_name": "Policy has wrong action?",
           "skip_execution": false
         },
         "object_type": "definition_activity",
@@ -3062,17 +3073,9 @@
             "base_type": "activity",
             "properties": {
               "condition": {
-                "left_operand": {
-                  "left_operand": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBD5N18ZK7Z5l1EvvX4lRhjBDNkLL1VMI$",
-                  "operator": "eq",
-                  "right_operand": ""
-                },
-                "operator": "or",
-                "right_operand": {
-                  "left_operand": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBE4UJDYJF52tMYY5CyhoutfZ3mi5RF4n$",
-                  "operator": "eq",
-                  "right_operand": true
-                }
+                "left_operand": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBE4UJDYJF52tMYY5CyhoutfZ3mi5RF4n$",
+                "operator": "eq",
+                "right_operand": true
               },
               "continue_on_failure": false,
               "display_name": "Yes",
@@ -3178,7 +3181,7 @@
                           "display_name": "ServiceNow - Add Work Note to Firewall Rule Task",
                           "input": {
                             "variable_workflow_01O26LHVKETWS6NlqDRxw7LozFb5PYuORuj": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.ServiceNow Task ID$",
-                            "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e[/code]\n$activity.definition_activity_01SBDB9VNPZDF7deIqxfZFPa6u3hrxV1J6m.output.error.message$",
+                            "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e[/code]\nFailed to process Threat Containment Request.\n$activity.definition_activity_01SBDB9VNPZDF7deIqxfZFPa6u3hrxV1J6m.output.error.message$",
                             "variable_workflow_01OX8KRPV34425GXjwybtQzddzhwdSmpqmk": "v2"
                           },
                           "runtime_user": {
@@ -3314,7 +3317,7 @@
                   "display_name": "ServiceNow - Add Work Note to Firewall Rule Task",
                   "input": {
                     "variable_workflow_01O26LHVKETWS6NlqDRxw7LozFb5PYuORuj": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.ServiceNow Task ID$",
-                    "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e[/code]\n$activity.definition_activity_01SBFG2VKX43I3m72HkRJ6eWEYd8eulotIS.output.error.message$",
+                    "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e[/code]\nFailed to process Threat Containment Request.\n$activity.definition_activity_01SBFG2VKX43I3m72HkRJ6eWEYd8eulotIS.output.error.message$",
                     "variable_workflow_01OX8KRPV34425GXjwybtQzddzhwdSmpqmk": "v2"
                   },
                   "runtime_user": {
@@ -3371,7 +3374,7 @@
           "display_name": "ServiceNow - Add Work Note to Firewall Rule Task",
           "input": {
             "variable_workflow_01O26LHVKETWS6NlqDRxw7LozFb5PYuORuj": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.ServiceNow Task ID$",
-            "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e\nFirawall Policy \"$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBD5N18ZK7Z5l1EvvX4lRhjBDNkLL1VMI$\" was created successfully.\n\u003cbr/\u003e\nObjects:\n\u003cul\u003e\n\u003cli\u003e\nSource Address Group: \"$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBBTW2WA37M2fvFzuIJBMyCa7GRg7ldDO$\" with object \"$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SB9OQ9J4RMT3JaxuNkO5BbVQBcn1GOOC1$\"\n\u003c/li\u003e\n\u003cli\u003e\nDestination Address Group: \"$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBBU6YZFLHU7ivu9e9Rki8KhZrxORq6sR$\" with object \"$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SB9PIPECCAL4L4Nb6HY857fnW7uLpEx71$\"\n\u003c/li\u003e\n\u003cli\u003e\nService Group: \"$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBATZ1JBTRB4y0iIpXGZkYfJNPnktOXPO$\" with object \"$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBAKR6SYUQ12lXhdq78P30h0yFJuIcDLC$\"\n\u003c/li\u003e\n\u003c/ul\u003e\n[/code]",
+            "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e\nThe Threat Containment Request was processed successfully.\n\u003cbr/\u003e\nObjects:\n\u003cul\u003e\n\u003cli\u003e\nFirawall Policy: \"$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBD5N18ZK7Z5l1EvvX4lRhjBDNkLL1VMI$\"\n\u003c/li\u003e\n\u003cli\u003e\nSource Address Group: \"$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBBTW2WA37M2fvFzuIJBMyCa7GRg7ldDO$\" with object \"$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SB9OQ9J4RMT3JaxuNkO5BbVQBcn1GOOC1$\"\n\u003c/li\u003e\n\u003cli\u003e\nDestination Address Group: \"$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBBU6YZFLHU7ivu9e9Rki8KhZrxORq6sR$\" with object \"$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SB9PIPECCAL4L4Nb6HY857fnW7uLpEx71$\"\n\u003c/li\u003e\n\u003cli\u003e\nService Group: \"$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBATZ1JBTRB4y0iIpXGZkYfJNPnktOXPO$\" with object \"$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBAKR6SYUQ12lXhdq78P30h0yFJuIcDLC$\"\n\u003c/li\u003e\n\u003c/ul\u003e\n[/code]",
             "variable_workflow_01OX8KRPV34425GXjwybtQzddzhwdSmpqmk": "v2"
           },
           "runtime_user": {
@@ -3438,18 +3441,18 @@
     }
   },
   "atomic_workflows": [
-    "definition_workflow_01Q2H2423CNMQ55zxmxIlndVdm1FyYI9WvB",
-    "definition_workflow_01S0C9RPDQDWD5dweMu1XWDQeA4IU48SC1F",
-    "definition_workflow_01O26LHVR14XR5ggjibxICB3qkpqZ7HuQmc",
-    "definition_workflow_01QJMY7EFE9EB0dUuvozT00neDnloTNQN05",
-    "definition_workflow_01QKJSE0LURMP1XIO79isiyUAXKTDDZeCGV",
-    "definition_workflow_01RZGROZT4HXO7Yzmi2GzZtLdMJTJ4MB2tQ",
+    "definition_workflow_01QCYG8UTYAXE2w8zM3Mn9RTBQXaMPNNl6e",
     "definition_workflow_01QEKYC6UW4XZ1w1cPVACPX85Vy4BJAAbq5",
+    "definition_workflow_01Q2H2423CNMQ55zxmxIlndVdm1FyYI9WvB",
+    "definition_workflow_01QKJSE0LURMP1XIO79isiyUAXKTDDZeCGV",
     "definition_workflow_01QNX6UNITCLT5hFo0PqHo1Ajkua15WaSmO",
+    "definition_workflow_01QIUK02LX1IV6JwzN4GYkZHhcTIw3RRTzf",
     "definition_workflow_01RL0ZYE7UHXO0nAMEa55KHOiiLLvVzSQwX",
+    "definition_workflow_01RZGROZT4HXO7Yzmi2GzZtLdMJTJ4MB2tQ",
+    "definition_workflow_01O26LHVR14XR5ggjibxICB3qkpqZ7HuQmc",
+    "definition_workflow_01S0C9RPDQDWD5dweMu1XWDQeA4IU48SC1F",
     "definition_workflow_01RZNYVXUXIG552KulMfFGCIBl8mRN1ZZvf",
     "definition_workflow_01RV9ELI34NB13GBEHhAGy60bTaNtnkFOEM",
-    "definition_workflow_01QIUK02LX1IV6JwzN4GYkZHhcTIw3RRTzf",
-    "definition_workflow_01QCYG8UTYAXE2w8zM3Mn9RTBQXaMPNNl6e"
+    "definition_workflow_01QJMY7EFE9EB0dUuvozT00neDnloTNQN05"
   ]
 }
