@@ -7,6 +7,76 @@
     "base_type": "workflow",
     "variables": [
       {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Service Group Name",
+          "type": "datatype.string",
+          "description": "The Name of the Service Group to be updated with the provided observable value. Leave this value empty if you want to create a new Service Group.",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01SBATZ1JBTRB4y0iIpXGZkYfJNPnktOXPO",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "input",
+          "name": "observable_type",
+          "type": "datatype.string",
+          "description": "Any type of the supported observables. You can check the list here: https://ciscosecurity.github.io/sxo-05-security-workflows/workflows/response/overview#valid-observable-types",
+          "is_required": true,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01S6BK8PJICEO1Sw0YZtdaQjtmobwyW8Tu9",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Service Name",
+          "type": "datatype.string",
+          "description": "Name of the Service. This will be populated automatically.",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01SBAKR6SYUQ12lXhdq78P30h0yFJuIcDLC",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Policy Name",
+          "type": "datatype.string",
+          "description": "Name of the Firewall Policy. This will be populated automatically.",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01SBD5N18ZK7Z5l1EvvX4lRhjBDNkLL1VMI",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Destination Address Group Name",
+          "type": "datatype.string",
+          "description": "Name of the group to contain destination address objects. Leave this value empty if you want to create a new Destination Address Group.",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01SBBU6YZFLHU7ivu9e9Rki8KhZrxORq6sR",
+        "object_type": "variable_workflow"
+      },
+      {
         "schema_id": "datatype.boolean",
         "properties": {
           "value": false,
@@ -25,13 +95,27 @@
         "properties": {
           "value": "",
           "scope": "local",
-          "name": "Policy Name",
+          "name": "Destination Address Name",
           "type": "datatype.string",
-          "description": "Name of the Firewall Policy. This will be populated automatically.",
+          "description": "Name of the object to handle destination address. This will be populated automatically.",
           "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01SBD5N18ZK7Z5l1EvvX4lRhjBDNkLL1VMI",
+        "unique_name": "variable_workflow_01SB9PIPECCAL4L4Nb6HY857fnW7uLpEx71",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Source Address Name",
+          "type": "datatype.string",
+          "description": "Name of the object to handle destination address. This will be populated automatically.",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01SB9OQ9J4RMT3JaxuNkO5BbVQBcn1GOOC1",
         "object_type": "variable_workflow"
       },
       {
@@ -66,56 +150,14 @@
         "schema_id": "datatype.string",
         "properties": {
           "value": "",
-          "scope": "local",
-          "name": "Destination Address Group Name",
-          "type": "datatype.string",
-          "description": "Name of the group to contain destination address objects. Leave this value empty if you want to create a new Destination Address Group.",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01SBBU6YZFLHU7ivu9e9Rki8KhZrxORq6sR",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "local",
-          "name": "Service Name",
-          "type": "datatype.string",
-          "description": "Name of the Service. This will be populated automatically.",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01SBAKR6SYUQ12lXhdq78P30h0yFJuIcDLC",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
           "scope": "input",
-          "name": "observable_type",
+          "name": "observable_value",
           "type": "datatype.string",
-          "description": "Any type of the supported observables. You can check the list here: https://ciscosecurity.github.io/sxo-05-security-workflows/workflows/response/overview#valid-observable-types",
+          "description": "Variable to receive the data from the ServiceNow triggering request.",
           "is_required": true,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01S6BK8PJICEO1Sw0YZtdaQjtmobwyW8Tu9",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "local",
-          "name": "Destination Address Name",
-          "type": "datatype.string",
-          "description": "Name of the object to handle destination address. This will be populated automatically.",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01SB9PIPECCAL4L4Nb6HY857fnW7uLpEx71",
+        "unique_name": "variable_workflow_01S6BKDUZAOOA57IxSfv5jb9bQXWEkREkVR",
         "object_type": "variable_workflow"
       },
       {
@@ -130,48 +172,6 @@
           "is_invisible": false
         },
         "unique_name": "variable_workflow_01SB9LG5ALPAB7SVBpxRQNCpK6FQSnPe9Kj",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "local",
-          "name": "Source Address Name",
-          "type": "datatype.string",
-          "description": "Name of the object to handle destination address. This will be populated automatically.",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01SB9OQ9J4RMT3JaxuNkO5BbVQBcn1GOOC1",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "input",
-          "name": "observable_value",
-          "type": "datatype.string",
-          "description": "Variable to receive the data from the ServiceNow triggering request.",
-          "is_required": true,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01S6BKDUZAOOA57IxSfv5jb9bQXWEkREkVR",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "local",
-          "name": "Service Group Name",
-          "type": "datatype.string",
-          "description": "The Name of the Service Group to be updated with the provided observable value. Leave this value empty if you want to create a new Service Group.",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01SBATZ1JBTRB4y0iIpXGZkYfJNPnktOXPO",
         "object_type": "variable_workflow"
       }
     ],
@@ -218,7 +218,7 @@
           "action_timeout": 180,
           "continue_on_failure": false,
           "display_name": "Parse input data",
-          "script": "import json\nimport sys\n\ndef read_possible_range_value(value):\n    value = [part.strip() for part in value.split('-')]\n    return '-'.join(value)\n\ndef read_protocol(protocol):\n    assert protocol in ('tcp', 'udp')\n    return protocol\n\ndef read_action(action):\n    action_mapping = {'allow': 'accept', 'block': 'deny'}\n    return action_mapping[action.lower()]\n#\ninput_data = json.loads(sys.argv[1])\ndestination_address = None\ndestination_address_type = None\nsource_address = None\ndestination_service = None\nprotocol = None\npre_rule = None\naction = None\nsn_task_id = None\nerror = None\nerror_mapping = {\n    KeyError: 'Input Data Error. Input JSON is not valid.',\n    AttributeError: \"Input Data Error. Destination port (port range) can't be empty.\",\n    AssertionError: \"Input Data Error. The protocol has to be one of TCP or UDP.\"\n}\ntry:\n    sn_task_id = input_data[\"ServiceNow Task ID\"]\n    destination_address = read_possible_range_value(input_data[\"Destination Host IP\"])\n    source_address = read_possible_range_value(input_data[\"Source Host IP\"])\n    destination_service = read_possible_range_value(input_data[\"Destination Port\"])\n    protocol = read_protocol(input_data[\"Protocol\"].lower())\n    pre_rule = input_data[\"Access Policy Name\"]\n    action = read_action(input_data[\"Access Action\"])\nexcept tuple(error_mapping) as exception:\n    error = error_mapping[exception.__class__]",
+          "script": "import json\nimport sys\n\ndef read_possible_range_value(value):\n    value = [part.strip() for part in value.split('-')]\n    return '-'.join(value)\n\ndef read_protocol(protocol):\n    assert protocol in ('tcp', 'udp')\n    return protocol\n\ndef read_action(action):\n    action_mapping = {'allow': 'accept', 'block': 'deny'}\n    return action_mapping[action.lower()]\n#\ninput_data = json.loads(sys.argv[1])\ndestination_address = None\ndestination_address_type = None\nsource_address = None\ndestination_service = None\nprotocol = None\npolicy = None\naction = None\nsn_task_id = None\nerror = None\nerror_mapping = {\n    KeyError: 'Input Data Error. Input JSON is not valid.',\n    AttributeError: \"Input Data Error. Destination port (port range) can't be empty.\",\n    AssertionError: \"Input Data Error. The protocol has to be one of TCP or UDP.\"\n}\ntry:\n    sn_task_id = input_data[\"ServiceNow Task ID\"]\n    destination_address = read_possible_range_value(input_data[\"Destination Host IP\"])\n    source_address = read_possible_range_value(input_data[\"Source Host IP\"])\n    destination_service = read_possible_range_value(input_data[\"Destination Port\"])\n    protocol = read_protocol(input_data[\"Protocol\"].lower())\n    policy = input_data[\"Access Policy Name\"]\n    action = read_action(input_data[\"Access Action\"])\nexcept tuple(error_mapping) as exception:\n    error = error_mapping[exception.__class__]",
           "script_arguments": [
             "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.input.variable_workflow_01S6BKDUZAOOA57IxSfv5jb9bQXWEkREkVR$"
           ],
@@ -239,7 +239,7 @@
               "script_query_type": "string"
             },
             {
-              "script_query": "pre_rule",
+              "script_query": "policy",
               "script_query_name": "Policy",
               "script_query_type": "string"
             },
@@ -891,6 +891,206 @@
                                 "object_type": "definition_activity"
                               }
                             ]
+                          },
+                          {
+                            "unique_name": "definition_activity_01SC6W7YYJMRV7fKLKYkRbUWcTz4GuojH8J",
+                            "name": "Condition Branch",
+                            "title": "Service Group Was Not Found",
+                            "type": "logic.condition_block",
+                            "base_type": "activity",
+                            "properties": {
+                              "condition": {
+                                "left_operand": {
+                                  "left_operand": "$activity.definition_activity_01SBAUBE9UMQ83pETNhwMOS54OuHlKbTvWX.output.error.message$",
+                                  "operator": "mw",
+                                  "right_operand": "Status code: 404"
+                                },
+                                "operator": "and",
+                                "right_operand": {
+                                  "left_operand": "$activity.definition_activity_01SBAUBE9UMQ83pETNhwMOS54OuHlKbTvWX.output.succeeded$",
+                                  "operator": "eq",
+                                  "right_operand": false
+                                }
+                              },
+                              "continue_on_failure": false,
+                              "display_name": "Service Group Was Not Found",
+                              "skip_execution": false
+                            },
+                            "object_type": "definition_activity",
+                            "actions": [
+                              {
+                                "unique_name": "definition_activity_01SBAXB13T5KV3K4KgWiNLf1CCWpVs4nDyP",
+                                "name": "Fortinet - FortiGate - Create Service Group",
+                                "title": "Fortinet - FortiGate - Create Service Group",
+                                "type": "workflow.atomic_workflow",
+                                "base_type": "subworkflow",
+                                "properties": {
+                                  "continue_on_failure": true,
+                                  "display_name": "Fortinet - FortiGate - Create Service Group",
+                                  "input": {
+                                    "variable_workflow_01RZNYVY3HT4W46eb1IGnZHuvPdAc9EVsVS": "root",
+                                    "variable_workflow_01RZNYVY3IKCI7hk0461ZsisyRTizEggTPq": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBATZ1JBTRB4y0iIpXGZkYfJNPnktOXPO$",
+                                    "variable_workflow_01RZNYVY3IUWJ3HLtS5USyUGRnKLLOFAKPo": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01S6BPQESSX1J2lrfBrlSyllQkTIdm3uQoe$",
+                                    "variable_workflow_01RZOD44514BX0kGUceiPoUWcHXcPoTc9Ap": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBAKR6SYUQ12lXhdq78P30h0yFJuIcDLC$",
+                                    "variable_workflow_01S5GA6PCT5AR6HtJNJc5kLJ2lhEfOu9Axu": false
+                                  },
+                                  "runtime_user": {
+                                    "target_default": true
+                                  },
+                                  "skip_execution": false,
+                                  "target": {
+                                    "use_workflow_target_group": true
+                                  },
+                                  "workflow_id": "definition_workflow_01RZNYVXUXIG552KulMfFGCIBl8mRN1ZZvf"
+                                },
+                                "object_type": "definition_activity"
+                              },
+                              {
+                                "unique_name": "definition_activity_01SBKDFG8GMVT42wUiqP0nLiJKn2NUZ1wYb",
+                                "name": "Condition Block",
+                                "title": "Critical Error Occurred?",
+                                "type": "logic.if_else",
+                                "base_type": "activity",
+                                "properties": {
+                                  "continue_on_failure": false,
+                                  "display_name": "Critical Error Occurred?",
+                                  "skip_execution": false
+                                },
+                                "object_type": "definition_activity",
+                                "blocks": [
+                                  {
+                                    "unique_name": "definition_activity_01SBKDFG8HDAE6hbLs7ur2qA83SogStbEH6",
+                                    "name": "Condition Branch",
+                                    "title": "Yes",
+                                    "type": "logic.condition_block",
+                                    "base_type": "activity",
+                                    "properties": {
+                                      "condition": {
+                                        "left_operand": "$activity.definition_activity_01SBAXB13T5KV3K4KgWiNLf1CCWpVs4nDyP.output.succeeded$",
+                                        "operator": "eq",
+                                        "right_operand": false
+                                      },
+                                      "continue_on_failure": false,
+                                      "display_name": "Yes",
+                                      "skip_execution": false
+                                    },
+                                    "object_type": "definition_activity",
+                                    "actions": [
+                                      {
+                                        "unique_name": "definition_activity_01SBKDFG8LCAZ5DH7jQr7rtZ8ee8oKYLOMN",
+                                        "name": "ServiceNow - Add Work Note to Firewall Rule Task",
+                                        "title": "ServiceNow - Add Work Note to Firewall Rule Task",
+                                        "type": "workflow.atomic_workflow",
+                                        "base_type": "subworkflow",
+                                        "properties": {
+                                          "continue_on_failure": false,
+                                          "display_name": "ServiceNow - Add Work Note to Firewall Rule Task",
+                                          "input": {
+                                            "variable_workflow_01O26LHVKETWS6NlqDRxw7LozFb5PYuORuj": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.ServiceNow Task ID$",
+                                            "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e[/code]\nFailed to process Threat Containment Request.\n$activity.definition_activity_01SBAXB13T5KV3K4KgWiNLf1CCWpVs4nDyP.output.error.message$",
+                                            "variable_workflow_01OX8KRPV34425GXjwybtQzddzhwdSmpqmk": "v2"
+                                          },
+                                          "runtime_user": {
+                                            "target_default": true
+                                          },
+                                          "skip_execution": false,
+                                          "target": {
+                                            "override_workflow_target_group_criteria": true,
+                                            "target_group": {
+                                              "run_on_all_targets": false,
+                                              "use_criteria": {
+                                                "choose_target_using_algorithm": "choose_first_with_matching_criteria",
+                                                "conditions": [
+                                                  {
+                                                    "left_operand": "$targetgroup.web-service endpoint.input.display_name$",
+                                                    "operator": "eqi",
+                                                    "right_operand": "ServiceNow_API"
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          },
+                                          "workflow_id": "definition_workflow_01O26LHVR14XR5ggjibxICB3qkpqZ7HuQmc"
+                                        },
+                                        "object_type": "definition_activity"
+                                      },
+                                      {
+                                        "unique_name": "definition_activity_01SBKDFG8NA9822K7fze7mSlWfFjFrDL6fU",
+                                        "name": "Completed",
+                                        "title": "Failed",
+                                        "type": "logic.completed",
+                                        "base_type": "activity",
+                                        "properties": {
+                                          "completion_type": "failed-completed",
+                                          "continue_on_failure": false,
+                                          "display_name": "Failed",
+                                          "result_message": "Failed to process Threat Containment Request.\n$activity.definition_activity_01SBAXB13T5KV3K4KgWiNLf1CCWpVs4nDyP.output.error.message$",
+                                          "skip_execution": false
+                                        },
+                                        "object_type": "definition_activity"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "unique_name": "definition_activity_01SBKGX56TN7E5qamwhi7AI9Vxh0C21MYb0",
+                                "name": "ServiceNow - Add Work Note to Firewall Rule Task",
+                                "title": "ServiceNow - Add Work Note to Firewall Rule Task",
+                                "type": "workflow.atomic_workflow",
+                                "base_type": "subworkflow",
+                                "properties": {
+                                  "continue_on_failure": false,
+                                  "display_name": "ServiceNow - Add Work Note to Firewall Rule Task",
+                                  "input": {
+                                    "variable_workflow_01O26LHVKETWS6NlqDRxw7LozFb5PYuORuj": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.ServiceNow Task ID$",
+                                    "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e[/code]\nSevice Group Name \"$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBATZ1JBTRB4y0iIpXGZkYfJNPnktOXPO$\" was not found, but the new Sevice Group with the name \"$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBATZ1JBTRB4y0iIpXGZkYfJNPnktOXPO$\" was created instead.",
+                                    "variable_workflow_01OX8KRPV34425GXjwybtQzddzhwdSmpqmk": "v2"
+                                  },
+                                  "runtime_user": {
+                                    "target_default": true
+                                  },
+                                  "skip_execution": false,
+                                  "target": {
+                                    "override_workflow_target_group_criteria": true,
+                                    "target_group": {
+                                      "run_on_all_targets": false,
+                                      "use_criteria": {
+                                        "choose_target_using_algorithm": "choose_first_with_matching_criteria",
+                                        "conditions": [
+                                          {
+                                            "left_operand": "$targetgroup.web-service endpoint.input.display_name$",
+                                            "operator": "eqi",
+                                            "right_operand": "ServiceNow_API"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  },
+                                  "workflow_id": "definition_workflow_01O26LHVR14XR5ggjibxICB3qkpqZ7HuQmc"
+                                },
+                                "object_type": "definition_activity"
+                              },
+                              {
+                                "unique_name": "definition_activity_01SBBC8B9GVZS2Gdtqp4WjG3pMZ4Xqh6g1I",
+                                "name": "Set Variables",
+                                "title": "Set Service Group Name",
+                                "type": "core.set_multiple_variables",
+                                "base_type": "activity",
+                                "properties": {
+                                  "continue_on_failure": false,
+                                  "display_name": "Set Service Group Name",
+                                  "skip_execution": false,
+                                  "variables_to_update": [
+                                    {
+                                      "variable_to_update": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBATZ1JBTRB4y0iIpXGZkYfJNPnktOXPO$",
+                                      "variable_value_new": "$activity.definition_activity_01SBAXB13T5KV3K4KgWiNLf1CCWpVs4nDyP.output.variable_workflow_01RZNYVY3JD6I54WoDH9BXZHHYpfwPJSW7d$"
+                                    }
+                                  ]
+                                },
+                                "object_type": "definition_activity"
+                              }
+                            ]
                           }
                         ]
                       }
@@ -1068,213 +1268,6 @@
                             {
                               "variable_to_update": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBATZ1JBTRB4y0iIpXGZkYfJNPnktOXPO$",
                               "variable_value_new": "$activity.definition_activity_01SBBIBDUXEP946UjXPgmtz9yWFNKPrbnEq.output.script_queries.Service Group Name$"
-                            }
-                          ]
-                        },
-                        "object_type": "definition_activity"
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "unique_name": "definition_activity_01SBAUXDALBSB7ivl23lL7qaxHZnST3qLSk",
-                "name": "Condition Block",
-                "title": "Service added?",
-                "type": "logic.if_else",
-                "base_type": "activity",
-                "properties": {
-                  "continue_on_failure": false,
-                  "display_name": "Service added?",
-                  "skip_execution": false
-                },
-                "object_type": "definition_activity",
-                "blocks": [
-                  {
-                    "unique_name": "definition_activity_01SBAUXDOM7SK2np4cPuaJc42ryoY9osAOi",
-                    "name": "Condition Branch",
-                    "title": "No",
-                    "type": "logic.condition_block",
-                    "base_type": "activity",
-                    "properties": {
-                      "condition": {
-                        "left_operand": "$activity.definition_activity_01SBB8D3HZLRV5qg4lXXXOzvcqM8WygH0ST.output.succeeded$",
-                        "operator": "eq",
-                        "right_operand": false
-                      },
-                      "continue_on_failure": false,
-                      "display_name": "No",
-                      "skip_execution": false
-                    },
-                    "object_type": "definition_activity",
-                    "actions": [
-                      {
-                        "unique_name": "definition_activity_01SBAXB13T5KV3K4KgWiNLf1CCWpVs4nDyP",
-                        "name": "Fortinet - FortiGate - Create Service Group",
-                        "title": "Fortinet - FortiGate - Create Service Group",
-                        "type": "workflow.atomic_workflow",
-                        "base_type": "subworkflow",
-                        "properties": {
-                          "continue_on_failure": true,
-                          "display_name": "Fortinet - FortiGate - Create Service Group",
-                          "input": {
-                            "variable_workflow_01RZNYVY3HT4W46eb1IGnZHuvPdAc9EVsVS": "root",
-                            "variable_workflow_01RZNYVY3IKCI7hk0461ZsisyRTizEggTPq": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBAKR6SYUQ12lXhdq78P30h0yFJuIcDLC$",
-                            "variable_workflow_01RZNYVY3IUWJ3HLtS5USyUGRnKLLOFAKPo": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01S6BPQESSX1J2lrfBrlSyllQkTIdm3uQoe$",
-                            "variable_workflow_01RZOD44514BX0kGUceiPoUWcHXcPoTc9Ap": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBAKR6SYUQ12lXhdq78P30h0yFJuIcDLC$",
-                            "variable_workflow_01S5GA6PCT5AR6HtJNJc5kLJ2lhEfOu9Axu": false
-                          },
-                          "runtime_user": {
-                            "target_default": true
-                          },
-                          "skip_execution": false,
-                          "target": {
-                            "use_workflow_target_group": true
-                          },
-                          "workflow_id": "definition_workflow_01RZNYVXUXIG552KulMfFGCIBl8mRN1ZZvf"
-                        },
-                        "object_type": "definition_activity"
-                      },
-                      {
-                        "unique_name": "definition_activity_01SBKDFG8GMVT42wUiqP0nLiJKn2NUZ1wYb",
-                        "name": "Condition Block",
-                        "title": "Critical Error Occurred?",
-                        "type": "logic.if_else",
-                        "base_type": "activity",
-                        "properties": {
-                          "continue_on_failure": false,
-                          "display_name": "Critical Error Occurred?",
-                          "skip_execution": false
-                        },
-                        "object_type": "definition_activity",
-                        "blocks": [
-                          {
-                            "unique_name": "definition_activity_01SBKDFG8HDAE6hbLs7ur2qA83SogStbEH6",
-                            "name": "Condition Branch",
-                            "title": "Yes",
-                            "type": "logic.condition_block",
-                            "base_type": "activity",
-                            "properties": {
-                              "condition": {
-                                "left_operand": "$activity.definition_activity_01SBAXB13T5KV3K4KgWiNLf1CCWpVs4nDyP.output.succeeded$",
-                                "operator": "eq",
-                                "right_operand": false
-                              },
-                              "continue_on_failure": false,
-                              "display_name": "Yes",
-                              "skip_execution": false
-                            },
-                            "object_type": "definition_activity",
-                            "actions": [
-                              {
-                                "unique_name": "definition_activity_01SBKDFG8LCAZ5DH7jQr7rtZ8ee8oKYLOMN",
-                                "name": "ServiceNow - Add Work Note to Firewall Rule Task",
-                                "title": "ServiceNow - Add Work Note to Firewall Rule Task",
-                                "type": "workflow.atomic_workflow",
-                                "base_type": "subworkflow",
-                                "properties": {
-                                  "continue_on_failure": false,
-                                  "display_name": "ServiceNow - Add Work Note to Firewall Rule Task",
-                                  "input": {
-                                    "variable_workflow_01O26LHVKETWS6NlqDRxw7LozFb5PYuORuj": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.ServiceNow Task ID$",
-                                    "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e[/code]\nFailed to process Threat Containment Request.\n$activity.definition_activity_01SBAXB13T5KV3K4KgWiNLf1CCWpVs4nDyP.output.error.message$",
-                                    "variable_workflow_01OX8KRPV34425GXjwybtQzddzhwdSmpqmk": "v2"
-                                  },
-                                  "runtime_user": {
-                                    "target_default": true
-                                  },
-                                  "skip_execution": false,
-                                  "target": {
-                                    "override_workflow_target_group_criteria": true,
-                                    "target_group": {
-                                      "run_on_all_targets": false,
-                                      "use_criteria": {
-                                        "choose_target_using_algorithm": "choose_first_with_matching_criteria",
-                                        "conditions": [
-                                          {
-                                            "left_operand": "$targetgroup.web-service endpoint.input.display_name$",
-                                            "operator": "eqi",
-                                            "right_operand": "ServiceNow_API"
-                                          }
-                                        ]
-                                      }
-                                    }
-                                  },
-                                  "workflow_id": "definition_workflow_01O26LHVR14XR5ggjibxICB3qkpqZ7HuQmc"
-                                },
-                                "object_type": "definition_activity"
-                              },
-                              {
-                                "unique_name": "definition_activity_01SBKDFG8NA9822K7fze7mSlWfFjFrDL6fU",
-                                "name": "Completed",
-                                "title": "Failed",
-                                "type": "logic.completed",
-                                "base_type": "activity",
-                                "properties": {
-                                  "completion_type": "failed-completed",
-                                  "continue_on_failure": false,
-                                  "display_name": "Failed",
-                                  "result_message": "Failed to process Threat Containment Request.\n$activity.definition_activity_01SBAXB13T5KV3K4KgWiNLf1CCWpVs4nDyP.output.error.message$",
-                                  "skip_execution": false
-                                },
-                                "object_type": "definition_activity"
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "unique_name": "definition_activity_01SBKGX56TN7E5qamwhi7AI9Vxh0C21MYb0",
-                        "name": "ServiceNow - Add Work Note to Firewall Rule Task",
-                        "title": "ServiceNow - Add Work Note to Firewall Rule Task",
-                        "type": "workflow.atomic_workflow",
-                        "base_type": "subworkflow",
-                        "properties": {
-                          "continue_on_failure": false,
-                          "display_name": "ServiceNow - Add Work Note to Firewall Rule Task",
-                          "input": {
-                            "variable_workflow_01O26LHVKETWS6NlqDRxw7LozFb5PYuORuj": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.ServiceNow Task ID$",
-                            "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e[/code]\nSevice Group Name \"$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBATZ1JBTRB4y0iIpXGZkYfJNPnktOXPO$\" was not found, but the new Sevice Group with the name \"$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBATZ1JBTRB4y0iIpXGZkYfJNPnktOXPO$\" was created instead.",
-                            "variable_workflow_01OX8KRPV34425GXjwybtQzddzhwdSmpqmk": "v2"
-                          },
-                          "runtime_user": {
-                            "target_default": true
-                          },
-                          "skip_execution": false,
-                          "target": {
-                            "override_workflow_target_group_criteria": true,
-                            "target_group": {
-                              "run_on_all_targets": false,
-                              "use_criteria": {
-                                "choose_target_using_algorithm": "choose_first_with_matching_criteria",
-                                "conditions": [
-                                  {
-                                    "left_operand": "$targetgroup.web-service endpoint.input.display_name$",
-                                    "operator": "eqi",
-                                    "right_operand": "ServiceNow_API"
-                                  }
-                                ]
-                              }
-                            }
-                          },
-                          "workflow_id": "definition_workflow_01O26LHVR14XR5ggjibxICB3qkpqZ7HuQmc"
-                        },
-                        "object_type": "definition_activity"
-                      },
-                      {
-                        "unique_name": "definition_activity_01SBBC8B9GVZS2Gdtqp4WjG3pMZ4Xqh6g1I",
-                        "name": "Set Variables",
-                        "title": "Set Service Group Name",
-                        "type": "core.set_multiple_variables",
-                        "base_type": "activity",
-                        "properties": {
-                          "continue_on_failure": false,
-                          "display_name": "Set Service Group Name",
-                          "skip_execution": false,
-                          "variables_to_update": [
-                            {
-                              "variable_to_update": "$workflow.definition_workflow_01S6AUJDD8LRG7MkYXhdf7irBMC3rSAJF1J.local.variable_workflow_01SBATZ1JBTRB4y0iIpXGZkYfJNPnktOXPO$",
-                              "variable_value_new": "$activity.definition_activity_01SBAXB13T5KV3K4KgWiNLf1CCWpVs4nDyP.output.variable_workflow_01RZNYVY3JD6I54WoDH9BXZHHYpfwPJSW7d$"
                             }
                           ]
                         },
@@ -3472,18 +3465,18 @@
     }
   },
   "atomic_workflows": [
-    "definition_workflow_01S0C9RPDQDWD5dweMu1XWDQeA4IU48SC1F",
-    "definition_workflow_01QJMY7EFE9EB0dUuvozT00neDnloTNQN05",
-    "definition_workflow_01RV9ELI34NB13GBEHhAGy60bTaNtnkFOEM",
-    "definition_workflow_01QIUK02LX1IV6JwzN4GYkZHhcTIw3RRTzf",
-    "definition_workflow_01QKJSE0LURMP1XIO79isiyUAXKTDDZeCGV",
-    "definition_workflow_01O26LHVR14XR5ggjibxICB3qkpqZ7HuQmc",
-    "definition_workflow_01RZNYVXUXIG552KulMfFGCIBl8mRN1ZZvf",
-    "definition_workflow_01Q2H2423CNMQ55zxmxIlndVdm1FyYI9WvB",
-    "definition_workflow_01RZGROZT4HXO7Yzmi2GzZtLdMJTJ4MB2tQ",
-    "definition_workflow_01QEKYC6UW4XZ1w1cPVACPX85Vy4BJAAbq5",
-    "definition_workflow_01QNX6UNITCLT5hFo0PqHo1Ajkua15WaSmO",
     "definition_workflow_01RL0ZYE7UHXO0nAMEa55KHOiiLLvVzSQwX",
-    "definition_workflow_01QCYG8UTYAXE2w8zM3Mn9RTBQXaMPNNl6e"
+    "definition_workflow_01O26LHVR14XR5ggjibxICB3qkpqZ7HuQmc",
+    "definition_workflow_01QKJSE0LURMP1XIO79isiyUAXKTDDZeCGV",
+    "definition_workflow_01S0C9RPDQDWD5dweMu1XWDQeA4IU48SC1F",
+    "definition_workflow_01Q2H2423CNMQ55zxmxIlndVdm1FyYI9WvB",
+    "definition_workflow_01QIUK02LX1IV6JwzN4GYkZHhcTIw3RRTzf",
+    "definition_workflow_01QCYG8UTYAXE2w8zM3Mn9RTBQXaMPNNl6e",
+    "definition_workflow_01QEKYC6UW4XZ1w1cPVACPX85Vy4BJAAbq5",
+    "definition_workflow_01RV9ELI34NB13GBEHhAGy60bTaNtnkFOEM",
+    "definition_workflow_01QNX6UNITCLT5hFo0PqHo1Ajkua15WaSmO",
+    "definition_workflow_01QJMY7EFE9EB0dUuvozT00neDnloTNQN05",
+    "definition_workflow_01RZGROZT4HXO7Yzmi2GzZtLdMJTJ4MB2tQ",
+    "definition_workflow_01RZNYVXUXIG552KulMfFGCIBl8mRN1ZZvf"
   ]
 }
