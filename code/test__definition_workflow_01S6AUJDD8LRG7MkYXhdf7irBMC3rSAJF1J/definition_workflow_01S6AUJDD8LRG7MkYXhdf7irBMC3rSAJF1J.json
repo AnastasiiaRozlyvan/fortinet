@@ -10,28 +10,28 @@
         "schema_id": "datatype.string",
         "properties": {
           "value": "",
-          "scope": "input",
-          "name": "observable_value",
+          "scope": "local",
+          "name": "Policy Name",
           "type": "datatype.string",
-          "description": "Variable to receive the data from the ServiceNow triggering request.",
-          "is_required": true,
+          "description": "Name of the Firewall Policy. This variable is required.",
+          "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01S6BKDUZAOOA57IxSfv5jb9bQXWEkREkVR",
+        "unique_name": "variable_workflow_01SBD5N18ZK7Z5l1EvvX4lRhjBDNkLL1VMI",
         "object_type": "variable_workflow"
       },
       {
         "schema_id": "datatype.string",
         "properties": {
-          "value": "",
+          "value": "SXo",
           "scope": "local",
-          "name": "Service Group Name",
+          "name": "Name Prefix",
           "type": "datatype.string",
-          "description": "The Name of the Service Group to be updated with the provided observable value. This variable is required.",
+          "description": "Name Prefix for names of the objects which will be created automatically.",
           "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01SBATZ1JBTRB4y0iIpXGZkYfJNPnktOXPO",
+        "unique_name": "variable_workflow_01SB9LG5ALPAB7SVBpxRQNCpK6FQSnPe9Kj",
         "object_type": "variable_workflow"
       },
       {
@@ -53,41 +53,13 @@
         "properties": {
           "value": "",
           "scope": "local",
-          "name": "Service Name",
+          "name": "Destination Address Group Name",
           "type": "datatype.string",
-          "description": "Name of the Service. This will be populated automatically.",
+          "description": "Name of the group to contain destination address objects. This variable is required.",
           "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01SBAKR6SYUQ12lXhdq78P30h0yFJuIcDLC",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "local",
-          "name": "Destination Address Name",
-          "type": "datatype.string",
-          "description": "Name of the object to handle destination address. This will be populated automatically.",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01SB9PIPECCAL4L4Nb6HY857fnW7uLpEx71",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "local",
-          "name": "Policy Name",
-          "type": "datatype.string",
-          "description": "Name of the Firewall Policy. This variable is required.",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01SBD5N18ZK7Z5l1EvvX4lRhjBDNkLL1VMI",
+        "unique_name": "variable_workflow_01SBBU6YZFLHU7ivu9e9Rki8KhZrxORq6sR",
         "object_type": "variable_workflow"
       },
       {
@@ -108,28 +80,28 @@
         "schema_id": "datatype.string",
         "properties": {
           "value": "",
-          "scope": "input",
-          "name": "observable_type",
+          "scope": "local",
+          "name": "Service Name",
           "type": "datatype.string",
-          "description": "Any type of the supported observables. You can check the list here: https://ciscosecurity.github.io/sxo-05-security-workflows/workflows/response/overview#valid-observable-types",
-          "is_required": true,
+          "description": "Name of the Service. This will be populated automatically.",
+          "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01S6BK8PJICEO1Sw0YZtdaQjtmobwyW8Tu9",
+        "unique_name": "variable_workflow_01SBAKR6SYUQ12lXhdq78P30h0yFJuIcDLC",
         "object_type": "variable_workflow"
       },
       {
         "schema_id": "datatype.string",
         "properties": {
-          "value": "SXo",
+          "value": "",
           "scope": "local",
-          "name": "Name Prefix",
+          "name": "Service Group Name",
           "type": "datatype.string",
-          "description": "Name Prefix for names of the objects which will be created automatically.",
+          "description": "The Name of the Service Group to be updated with the provided observable value. This variable is required.",
           "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01SB9LG5ALPAB7SVBpxRQNCpK6FQSnPe9Kj",
+        "unique_name": "variable_workflow_01SBATZ1JBTRB4y0iIpXGZkYfJNPnktOXPO",
         "object_type": "variable_workflow"
       },
       {
@@ -151,13 +123,41 @@
         "properties": {
           "value": "",
           "scope": "local",
-          "name": "Destination Address Group Name",
+          "name": "Destination Address Name",
           "type": "datatype.string",
-          "description": "Name of the group to contain destination address objects. This variable is required.",
+          "description": "Name of the object to handle destination address. This will be populated automatically.",
           "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01SBBU6YZFLHU7ivu9e9Rki8KhZrxORq6sR",
+        "unique_name": "variable_workflow_01SB9PIPECCAL4L4Nb6HY857fnW7uLpEx71",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "input",
+          "name": "observable_value",
+          "type": "datatype.string",
+          "description": "Variable to receive the data from the ServiceNow triggering request.",
+          "is_required": true,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01S6BKDUZAOOA57IxSfv5jb9bQXWEkREkVR",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "input",
+          "name": "observable_type",
+          "type": "datatype.string",
+          "description": "Any type of the supported observables. You can check the list here: https://ciscosecurity.github.io/sxo-05-security-workflows/workflows/response/overview#valid-observable-types",
+          "is_required": true,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01S6BK8PJICEO1Sw0YZtdaQjtmobwyW8Tu9",
         "object_type": "variable_workflow"
       }
     ],
@@ -415,7 +415,7 @@
                   "display_name": "ServiceNow - Add Work Note to Firewall Rule Task",
                   "input": {
                     "variable_workflow_01O26LHVKETWS6NlqDRxw7LozFb5PYuORuj": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.ServiceNow Task ID$",
-                    "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e[/code]\nFailed to process Threat Containment Request.\n$activity.definition_activity_01S6CL78DL9P94y712dpJy4QcIhVEpTdy1U.output.error.message$",
+                    "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e\nFailed to process Threat Containment Request.\n$activity.definition_activity_01S6CL78DL9P94y712dpJy4QcIhVEpTdy1U.output.error.message$\n[/code]",
                     "variable_workflow_01OX8KRPV34425GXjwybtQzddzhwdSmpqmk": "v2"
                   },
                   "runtime_user": {
@@ -627,7 +627,7 @@
                           "display_name": "ServiceNow - Add Work Note to Firewall Rule Task",
                           "input": {
                             "variable_workflow_01O26LHVKETWS6NlqDRxw7LozFb5PYuORuj": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.ServiceNow Task ID$",
-                            "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e[/code]\nFailed to process Threat Containment Request.\n$activity.definition_activity_01SBAEM7HTBEB0ZEpT0OKh6ELGjbVw6YmBv.output.error.message$",
+                            "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e\nFailed to process Threat Containment Request.\n$activity.definition_activity_01SBAEM7HTBEB0ZEpT0OKh6ELGjbVw6YmBv.output.error.message$\n[/code]",
                             "variable_workflow_01OX8KRPV34425GXjwybtQzddzhwdSmpqmk": "v2"
                           },
                           "runtime_user": {
@@ -756,12 +756,12 @@
               {
                 "unique_name": "definition_activity_01SBKBUNNZUE724JROkxphB6UP4vtkjEDdj",
                 "name": "Condition Block",
-                "title": "Was the service group update successful?",
+                "title": "Service group update successful?",
                 "type": "logic.if_else",
                 "base_type": "activity",
                 "properties": {
                   "continue_on_failure": false,
-                  "display_name": "Was the service group update successful?",
+                  "display_name": "Service group update successful?",
                   "skip_execution": false
                 },
                 "object_type": "definition_activity",
@@ -795,7 +795,7 @@
                           "display_name": "ServiceNow - Add Work Note to Firewall Rule Task",
                           "input": {
                             "variable_workflow_01O26LHVKETWS6NlqDRxw7LozFb5PYuORuj": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.ServiceNow Task ID$",
-                            "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e[/code]\nFailed to process Threat Containment Request.\n$activity.definition_activity_01SBAUBE9UMQ83pETNhwMOS54OuHlKbTvWX.output.error.message$",
+                            "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e\nFailed to process Threat Containment Request.\n$activity.definition_activity_01SBAUBE9UMQ83pETNhwMOS54OuHlKbTvWX.output.error.message$\n[/code]",
                             "variable_workflow_01OX8KRPV34425GXjwybtQzddzhwdSmpqmk": "v2"
                           },
                           "runtime_user": {
@@ -1043,7 +1043,7 @@
                       "display_name": "ServiceNow - Add Work Note to Firewall Rule Task",
                       "input": {
                         "variable_workflow_01O26LHVKETWS6NlqDRxw7LozFb5PYuORuj": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.ServiceNow Task ID$",
-                        "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e[/code]\nFailed to process Threat Containment Request.\n$activity.definition_activity_01S6BN3MBOGXH6W8sfXZBbaq9gkxO21ngkx.output.error.message$",
+                        "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e\nFailed to process Threat Containment Request.\n$activity.definition_activity_01S6BN3MBOGXH6W8sfXZBbaq9gkxO21ngkx.output.error.message$\n[/code]",
                         "variable_workflow_01OX8KRPV34425GXjwybtQzddzhwdSmpqmk": "v2"
                       },
                       "runtime_user": {
@@ -1327,7 +1327,7 @@
                               "display_name": "ServiceNow - Add Work Note to Firewall Rule Task",
                               "input": {
                                 "variable_workflow_01O26LHVKETWS6NlqDRxw7LozFb5PYuORuj": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.ServiceNow Task ID$",
-                                "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e[/code]\nFailed to process Threat Containment Request.\n$activity.definition_activity_01SB9VLY3ZGD00vH3KixvD3xRXR5Mh3TXPf.output.error.message$",
+                                "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e\nFailed to process Threat Containment Request.\n$activity.definition_activity_01SB9VLY3ZGD00vH3KixvD3xRXR5Mh3TXPf.output.error.message$\n[/code]",
                                 "variable_workflow_01OX8KRPV34425GXjwybtQzddzhwdSmpqmk": "v2"
                               },
                               "runtime_user": {
@@ -1557,12 +1557,12 @@
                   {
                     "unique_name": "definition_activity_01SBLD1F0YNY87fbIBxyNgHIyc4KRjunMec",
                     "name": "Condition Block",
-                    "title": "Was the address group update successful?",
+                    "title": "Address group update successful?",
                     "type": "logic.if_else",
                     "base_type": "activity",
                     "properties": {
                       "continue_on_failure": false,
-                      "display_name": "Was the address group update successful?",
+                      "display_name": "Address group update successful?",
                       "skip_execution": false
                     },
                     "object_type": "definition_activity",
@@ -1596,7 +1596,7 @@
                               "display_name": "ServiceNow - Add Work Note to Firewall Rule Task",
                               "input": {
                                 "variable_workflow_01O26LHVKETWS6NlqDRxw7LozFb5PYuORuj": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.ServiceNow Task ID$",
-                                "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e[/code]\nFailed to process Threat Containment Request.\n$activity.definition_activity_01SBCKDCUKQ8T5cFauUVLpT3Xx6xzQM1TVq.output.error.message$",
+                                "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e\nFailed to process Threat Containment Request.\n$activity.definition_activity_01SBCKDCUKQ8T5cFauUVLpT3Xx6xzQM1TVq.output.error.message$\n[/code]",
                                 "variable_workflow_01OX8KRPV34425GXjwybtQzddzhwdSmpqmk": "v2"
                               },
                               "runtime_user": {
@@ -1881,7 +1881,7 @@
                                   "display_name": "ServiceNow - Add Work Note to Firewall Rule Task",
                                   "input": {
                                     "variable_workflow_01O26LHVKETWS6NlqDRxw7LozFb5PYuORuj": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.ServiceNow Task ID$",
-                                    "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e[/code]\nFailed to process Threat Containment Request.\n$activity.definition_activity_01SBEHNV3YOGB7b5X3pdHIoWr5HWkSXlV8R.output.error.message$",
+                                    "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e\nFailed to process Threat Containment Request.\n$activity.definition_activity_01SBEHNV3YOGB7b5X3pdHIoWr5HWkSXlV8R.output.error.message$\n[/code]",
                                     "variable_workflow_01OX8KRPV34425GXjwybtQzddzhwdSmpqmk": "v2"
                                   },
                                   "runtime_user": {
@@ -1958,7 +1958,7 @@
                           "display_name": "ServiceNow - Add Work Note to Firewall Rule Task",
                           "input": {
                             "variable_workflow_01O26LHVKETWS6NlqDRxw7LozFb5PYuORuj": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.ServiceNow Task ID$",
-                            "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e[/code]\nFailed to process Threat Containment Request.\n$activity.definition_activity_01SBD6B9UADAI1eDxrUDAtqqB6E4tVnT7Hh.output.error.message$",
+                            "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e\nFailed to process Threat Containment Request.\n$activity.definition_activity_01SBD6B9UADAI1eDxrUDAtqqB6E4tVnT7Hh.output.error.message$\n[/code]",
                             "variable_workflow_01OX8KRPV34425GXjwybtQzddzhwdSmpqmk": "v2"
                           },
                           "runtime_user": {
@@ -2148,7 +2148,7 @@
                   "display_name": "ServiceNow - Add Work Note to Firewall Rule Task",
                   "input": {
                     "variable_workflow_01O26LHVKETWS6NlqDRxw7LozFb5PYuORuj": "$activity.definition_activity_01SBFRZPMC5XH4y9ws02Umtm7b6VoWnc827.output.script_queries.ServiceNow Task ID$",
-                    "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e[/code]\nFailed to process Threat Containment Request.\n$activity.definition_activity_01SBFG2VKX43I3m72HkRJ6eWEYd8eulotIS.output.error.message$",
+                    "variable_workflow_01O26LHVKEV5Z72XukftJQPOqPzsRpLGjzl": "[code]\u003ch2\u003eMessage from Fortinet - FortiGate - Request Threat Containment \u003c/h2\u003e\nFailed to process Threat Containment Request.\n$activity.definition_activity_01SBFG2VKX43I3m72HkRJ6eWEYd8eulotIS.output.error.message$\n[/code]",
                     "variable_workflow_01OX8KRPV34425GXjwybtQzddzhwdSmpqmk": "v2"
                   },
                   "runtime_user": {
@@ -2272,15 +2272,15 @@
     }
   },
   "atomic_workflows": [
-    "definition_workflow_01RL0ZYE7UHXO0nAMEa55KHOiiLLvVzSQwX",
-    "definition_workflow_01QIUK02LX1IV6JwzN4GYkZHhcTIw3RRTzf",
-    "definition_workflow_01Q2H2423CNMQ55zxmxIlndVdm1FyYI9WvB",
     "definition_workflow_01RV9ELI34NB13GBEHhAGy60bTaNtnkFOEM",
-    "definition_workflow_01QNX6UNITCLT5hFo0PqHo1Ajkua15WaSmO",
-    "definition_workflow_01RZGROZT4HXO7Yzmi2GzZtLdMJTJ4MB2tQ",
-    "definition_workflow_01QKJSE0LURMP1XIO79isiyUAXKTDDZeCGV",
     "definition_workflow_01O26LHVR14XR5ggjibxICB3qkpqZ7HuQmc",
+    "definition_workflow_01QIUK02LX1IV6JwzN4GYkZHhcTIw3RRTzf",
+    "definition_workflow_01QJMY7EFE9EB0dUuvozT00neDnloTNQN05",
+    "definition_workflow_01Q2H2423CNMQ55zxmxIlndVdm1FyYI9WvB",
     "definition_workflow_01S0C9RPDQDWD5dweMu1XWDQeA4IU48SC1F",
-    "definition_workflow_01QJMY7EFE9EB0dUuvozT00neDnloTNQN05"
+    "definition_workflow_01QKJSE0LURMP1XIO79isiyUAXKTDDZeCGV",
+    "definition_workflow_01QNX6UNITCLT5hFo0PqHo1Ajkua15WaSmO",
+    "definition_workflow_01RL0ZYE7UHXO0nAMEa55KHOiiLLvVzSQwX",
+    "definition_workflow_01RZGROZT4HXO7Yzmi2GzZtLdMJTJ4MB2tQ"
   ]
 }
